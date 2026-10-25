@@ -5,16 +5,25 @@ Using 5 stores:
         km  plodine   045     Ulica Vice Vukova 2
         km  lidl      210     Zadarska Ulica 79
 Downloading archive 2026-10-25 (119 MB) ...
+Chains missing in 2026-10-25: ['kaufland']. Falling back to 2026-10-24 ...
 {
   "archive_date": "2026-10-25",
+  "chain_archive_date": {
+    "konzum": "2026-10-25",
+    "lidl": "2026-10-25",
+    "spar": "2026-10-25",
+    "plodine": "2026-10-25",
+    "kaufland": "2026-10-24"
+  },
   "generated": "2026-10-25",
   "stores": 5,
-  "rows": 73567,
+  "rows": 87685,
   "rows_by_chain": {
     "konzum": 5375,
     "lidl": 14105,
     "spar": 5323,
-    "plodine": 48764
+    "plodine": 48764,
+    "kaufland": 14118
   },
   "staples_matched": 48,
   "staples_total": 48

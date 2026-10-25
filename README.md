@@ -4,7 +4,7 @@ Weekly grocery price snapshot for a configurable set of nearby stores, built on 
 
 ## What it does
 
-A GitHub Action runs `scripts/filter.py` every Saturday evening. It downloads the day's archive from `api.cijene.dev/v0/archive/<date>.zip`, keeps the nearest store per chain within `radius_km` of the configured point, and commits:
+A GitHub Action runs `scripts/filter.py` every Monday morning (Lidl promotions start Mondays, most other chains Wednesday or Thursday). Chains missing from the day's archive fall back to the previous day. It downloads the day's archive from `api.cijene.dev/v0/archive/<date>.zip`, keeps the nearest store per chain within `radius_km` of the configured point, and commits:
 
 - `data/stores.csv` the stores used
 - `data/prices.csv.gz` every product + price in those stores

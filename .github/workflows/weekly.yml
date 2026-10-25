@@ -2,8 +2,8 @@ name: weekly price snapshot
 
 on:
   schedule:
-    # Saturday 19:17 UTC = 21:17 Zagreb (CEST) / 20:17 (CET). Day's archive is long published by then.
-    - cron: "17 19 * * 6"
+    # Monday 08:41 UTC = 09:41 Zagreb (CET) / 10:41 (CEST). Lidl promos flip on Monday, others Wed/Thu.
+    - cron: "41 8 * * 1"
   workflow_dispatch:
 
 permissions:

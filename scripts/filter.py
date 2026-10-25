@@ -113,14 +113,60 @@ def pick_stores():
     return chosen
 
 
-def latest_archive():
+def list_archives():
+    """Archives newest first, today or earlier."""
     lst = json.loads(fetch(CFG["archive_list_url"]))["archives"]
-    lst.sort(key=lambda a: a["date"], reverse=True)
     today = date.today().isoformat()
-    for a in lst:
-        if a["date"] <= today:
-            return a
-    return lst[0]
+    lst = [a for a in lst if a["date"] <= today] or lst
+    lst.sort(key=lambda a: a["date"], reverse=True)
+    return lst
+
+
+def process_archive(zf, wanted, chains, archive_date):
+    """Extract rows for the wanted stores of the given chains from one archive."""
+    names = set(zf.namelist())
+    out_rows, by_chain_count, chain_date = [], defaultdict(int), {}
+    for chain in chains:
+        if f"{chain}/prices.csv" not in names:
+            continue
+        codes = {sc for (c, sc) in wanted if c == chain}
+        prods = {}
+        with zf.open(f"{chain}/products.csv") as f:
+            for p in csv.DictReader(io.TextIOWrapper(f, encoding="utf-8")):
+                prods[p["product_id"]] = p
+        with zf.open(f"{chain}/prices.csv") as f:
+            for pr in csv.DictReader(io.TextIOWrapper(f, encoding="utf-8")):
+                if pr["store_id"] not in codes:
+                    continue
+                p = prods.get(pr["product_id"])
+                if not p:
+                    continue
+                price = num(pr["price"])
+                special = num(pr.get("special_price"))
+                eff = special if (special and price and special < price) else price
+                if eff is None:
+                    continue
+                kg = to_kg(p["unit"], p["quantity"], p["name"])
+                unit_price = num(pr.get("unit_price"))
+                ppk = round(eff / kg, 2) if kg else (unit_price if unit_price else None)
+                st = wanted[(chain, pr["store_id"])]
+                out_rows.append({
+                    "chain": chain, "store_code": pr["store_id"], "store_address": st["address"],
+                    "distance_km": st["distance_km"], "archive_date": archive_date, "barcode": p["barcode"],
+                    "product_id": p["product_id"], "name": p["name"], "brand": p.get("brand", ""),
+                    "category": p.get("category", ""), "unit": p.get("unit", ""), "quantity": p.get("quantity", ""),
+                    "price": price, "special_price": special or "", "eff_price": eff,
+                    "price_per_kg": ppk if ppk is not None else "",
+                    "available": pr.get("available", ""),
+                })
+                by_chain_count[chain] += 1
+        if by_chain_count[chain]:
+            chain_date[chain] = archive_date
+        else:
+            with zf.open(f"{chain}/stores.csv") as f:
+                ids = [s["store_id"] for s in csv.DictReader(io.TextIOWrapper(f, encoding="utf-8"))]
+            print(f"note: {chain} {sorted(codes)} not in archive {archive_date}; its store_ids start: {ids[:12]}")
+    return out_rows, by_chain_count, chain_date
 
 
 def num(s):
@@ -166,55 +212,26 @@ def main():
     for s in stores:
         print(f'  {str(s["distance_km"]):>5} km  {s["chain"]:9} {s["store_code"]:7} {s["address"]}')
 
-    arch = latest_archive()
+    archives = list_archives()
+    arch = archives[0]
     print(f'Downloading archive {arch["date"]} ({arch["size"]/1e6:.0f} MB) ...')
-    blob = fetch(arch["url"], binary=True)
-    zf = zipfile.ZipFile(io.BytesIO(blob))
-    names = set(zf.namelist())
+    zf = zipfile.ZipFile(io.BytesIO(fetch(arch["url"], binary=True)))
+    chains_wanted = [c for c in CFG["chains"] if any(ch == c for (ch, _) in wanted)]
+    out_rows, by_chain_count, chain_date = process_archive(zf, wanted, chains_wanted, arch["date"])
 
-    out_rows = []
-    by_chain_count = defaultdict(int)
-    for chain in CFG["chains"]:
-        if f"{chain}/prices.csv" not in names:
-            continue
-        codes = {sc for (c, sc) in wanted if c == chain}
-        if not codes:
-            continue
-        prods = {}
-        with zf.open(f"{chain}/products.csv") as f:
-            for p in csv.DictReader(io.TextIOWrapper(f, encoding="utf-8")):
-                prods[p["product_id"]] = p
-        with zf.open(f"{chain}/prices.csv") as f:
-            for pr in csv.DictReader(io.TextIOWrapper(f, encoding="utf-8")):
-                if pr["store_id"] not in codes:
-                    continue
-                p = prods.get(pr["product_id"])
-                if not p:
-                    continue
-                price = num(pr["price"])
-                special = num(pr.get("special_price"))
-                eff = special if (special and price and special < price) else price
-                if eff is None:
-                    continue
-                kg = to_kg(p["unit"], p["quantity"], p["name"])
-                unit_price = num(pr.get("unit_price"))
-                ppk = round(eff / kg, 2) if kg else (unit_price if unit_price else None)
-                st = wanted[(chain, pr["store_id"])]
-                out_rows.append({
-                    "chain": chain, "store_code": pr["store_id"], "store_address": st["address"],
-                    "distance_km": st["distance_km"], "barcode": p["barcode"],
-                    "product_id": p["product_id"], "name": p["name"], "brand": p.get("brand", ""),
-                    "category": p.get("category", ""), "unit": p.get("unit", ""), "quantity": p.get("quantity", ""),
-                    "price": price, "special_price": special or "", "eff_price": eff,
-                    "price_per_kg": ppk if ppk is not None else "",
-                    "available": pr.get("available", ""),
-                })
-                by_chain_count[chain] += 1
-        for code in codes:
-            if not any(r["chain"] == chain and r["store_code"] == code for r in out_rows[-5000:]) and by_chain_count[chain] == 0:
-                with zf.open(f"{chain}/stores.csv") as f:
-                    ids = [s["store_id"] for s in csv.DictReader(io.TextIOWrapper(f, encoding="utf-8"))]
-                print(f"WARNING {chain}:{code} has no prices. Archive store_ids for {chain} (first 15): {ids[:15]}")
+    # Chains missing from today's archive (e.g. Lidl on Sundays): fall back to the previous day.
+    missing = [c for c in chains_wanted if by_chain_count.get(c, 0) == 0]
+    if missing and len(archives) > 1:
+        prev = archives[1]
+        print(f'Chains missing in {arch["date"]}: {missing}. Falling back to {prev["date"]} ...')
+        zf2 = zipfile.ZipFile(io.BytesIO(fetch(prev["url"], binary=True)))
+        rows2, cnt2, date2 = process_archive(zf2, wanted, missing, prev["date"])
+        out_rows += rows2
+        by_chain_count.update({k: v for k, v in cnt2.items() if v})
+        chain_date.update(date2)
+    still_missing = [c for c in chains_wanted if by_chain_count.get(c, 0) == 0]
+    if still_missing:
+        print(f"WARNING no prices for {still_missing} in the last two archives (store code wrong or chain not crawled)")
 
     cols = list(out_rows[0].keys())
     with gzip.open(DATA / "prices.csv.gz", "wt", encoding="utf-8", newline="") as f:
@@ -258,7 +275,7 @@ def main():
             for rank, (metric, r) in enumerate(kept, 1):
                 ppk = r["price_per_kg"]
                 picks.append({"rank": rank, **{
-                "item": s["item"], "group": s["group"], "chain": chain, "store_code": code,
+                "item": s["item"], "group": s["group"], "chain": chain, "store_code": code, "archive_date": r["archive_date"],
                 "store_address": r["store_address"], "name": r["name"], "brand": r["brand"],
                 "quantity": r["quantity"], "unit": r["unit"], "price": r["price"],
                 "special_price": r["special_price"], "eff_price": r["eff_price"],
@@ -272,7 +289,7 @@ def main():
         w.writerows(picks)
 
     meta = {
-        "archive_date": arch["date"], "generated": date.today().isoformat(),
+        "archive_date": arch["date"], "chain_archive_date": chain_date, "generated": date.today().isoformat(),
         "stores": len(stores), "rows": len(out_rows), "rows_by_chain": dict(by_chain_count),
         "staples_matched": len({p["item"] for p in picks}), "staples_total": len(staples),
     }

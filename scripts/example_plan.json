@@ -1,55 +1,350 @@
 {
-  "week_start": "2026-10-26", "week_end": "2026-11-01", "generated": "2026-10-25",
-  "archive_dates": {"lidl": "2026-10-25", "konzum": "2026-10-25", "spar": "2026-10-25", "plodine": "2026-10-25", "kaufland": "2026-10-24"},
-  "notes": ["Lidl akcije se mijenjaju u ponedjeljak; Konzum/Spar/Plodine/Kaufland vrijede do srijede.", "Kaufland cijene su od subote (nedjeljni cjenik nije objavljen)."],
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "generated": "2026-10-25",
+  "archive_dates": {
+    "lidl": "2026-10-25",
+    "konzum": "2026-10-25",
+    "spar": "2026-10-25",
+    "plodine": "2026-10-25",
+    "kaufland": "2026-10-24"
+  },
+  "notes": [
+    "Lidl akcije se mijenjaju u ponedjeljak; Konzum/Spar/Plodine/Kaufland vrijede do srijede.",
+    "Kaufland cijene su od subote (nedjeljni cjenik nije objavljen)."
+  ],
   "stores": [
-    {"chain": "lidl", "address": "Zadarska 79"},
-    {"chain": "konzum", "address": "Ozaljska 148"},
-    {"chain": "spar", "address": "H. Macanovića 29"},
-    {"chain": "plodine", "address": "Vice Vukova 2"},
-    {"chain": "kaufland", "address": "Jablanska 80"}
+    {
+      "chain": "lidl",
+      "address": "Zadarska 79"
+    },
+    {
+      "chain": "konzum",
+      "address": "Ozaljska 148"
+    },
+    {
+      "chain": "spar",
+      "address": "H. Macanovića 29"
+    },
+    {
+      "chain": "plodine",
+      "address": "Vice Vukova 2"
+    },
+    {
+      "chain": "kaufland",
+      "address": "Jablanska 80"
+    }
   ],
   "days": [
-    {"date": "2026-10-26", "label": "Mon", "lunch": "grah i kupus", "dinner": "Pileći file s rižom i brokulom", "dinner_recipe": "pile-riza", "protein_g": 92, "kcal": 840},
-    {"date": "2026-10-27", "label": "Tue", "lunch": "grah i kupus", "dinner": "Pileći file s rižom i brokulom", "dinner_recipe": "pile-riza", "leftover": true, "protein_g": 92, "kcal": 840},
-    {"date": "2026-10-28", "label": "Wed", "lunch": "vani", "dinner": "Oslić iz pećnice s krumpirom i blitvom", "dinner_recipe": "oslic", "protein_g": 88, "kcal": 760},
-    {"date": "2026-10-29", "label": "Thu", "lunch": "grah i kupus", "dinner": "Bolonjez od mljevenog mesa s tjesteninom", "dinner_recipe": "bolonjez", "protein_g": 90, "kcal": 900},
-    {"date": "2026-10-30", "label": "Fri", "lunch": "grah i kupus", "dinner": "Bolonjez od mljevenog mesa s tjesteninom", "dinner_recipe": "bolonjez", "leftover": true, "protein_g": 90, "kcal": 900},
-    {"date": "2026-10-31", "label": "Sat", "lunch": "Omlet od 5 jaja sa skutom i špinatom", "lunch_recipe": "omlet", "dinner": "Svinjski vrat s pečenim povrćem", "dinner_recipe": "vrat", "protein_g": 128, "kcal": 1500},
-    {"date": "2026-11-01", "label": "Sun", "lunch": "Tuna salata sa slanutkom", "lunch_recipe": "tuna", "dinner": "Svinjski vrat s pečenim povrćem", "dinner_recipe": "vrat", "leftover": true, "protein_g": 120, "kcal": 1400}
+    {
+      "date": "2026-10-26",
+      "label": "Mon",
+      "lunch": "grah i kupus",
+      "dinner": "Pileći file s rižom i brokulom",
+      "dinner_recipe": "pile-riza",
+      "protein_g": 92,
+      "kcal": 840
+    },
+    {
+      "date": "2026-10-27",
+      "label": "Tue",
+      "lunch": "grah i kupus",
+      "dinner": "Pileći file s rižom i brokulom",
+      "dinner_recipe": "pile-riza",
+      "leftover": true,
+      "protein_g": 92,
+      "kcal": 840
+    },
+    {
+      "date": "2026-10-28",
+      "label": "Wed",
+      "lunch": "vani",
+      "dinner": "Oslić iz pećnice s krumpirom i blitvom",
+      "dinner_recipe": "oslic",
+      "protein_g": 88,
+      "kcal": 760
+    },
+    {
+      "date": "2026-10-29",
+      "label": "Thu",
+      "lunch": "grah i kupus",
+      "dinner": "Bolonjez od mljevenog mesa s tjesteninom",
+      "dinner_recipe": "bolonjez",
+      "protein_g": 90,
+      "kcal": 900
+    },
+    {
+      "date": "2026-10-30",
+      "label": "Fri",
+      "lunch": "grah i kupus",
+      "dinner": "Bolonjez od mljevenog mesa s tjesteninom",
+      "dinner_recipe": "bolonjez",
+      "leftover": true,
+      "protein_g": 90,
+      "kcal": 900
+    },
+    {
+      "date": "2026-10-31",
+      "label": "Sat",
+      "lunch": "Omlet od 5 jaja sa skutom i špinatom",
+      "lunch_recipe": "omlet",
+      "dinner": "Svinjski vrat s pečenim povrćem",
+      "dinner_recipe": "vrat",
+      "protein_g": 128,
+      "kcal": 1500
+    },
+    {
+      "date": "2026-11-01",
+      "label": "Sun",
+      "lunch": "Tuna salata sa slanutkom",
+      "lunch_recipe": "tuna",
+      "dinner": "Svinjski vrat s pečenim povrćem",
+      "dinner_recipe": "vrat",
+      "leftover": true,
+      "protein_g": 120,
+      "kcal": 1400
+    }
   ],
   "shopping": [
-    {"chain": "lidl", "name": "Svježi pileći filet", "pack": "cca 1 kg", "packs": 1, "unit_price": 4.59, "total": 4.59, "for": ["Pon", "Uto"], "promo": true},
-    {"chain": "lidl", "name": "Oslić BG Hubbsi XXL", "pack": "1 kg", "packs": 1, "unit_price": 3.66, "total": 3.66, "for": ["Sri"]},
-    {"chain": "lidl", "name": "Svinjsko mljeveno meso", "pack": "500 g", "packs": 2, "unit_price": 1.99, "total": 3.98, "for": ["Čet", "Pet"]},
-    {"chain": "lidl", "name": "Svježi sir 0% m.m.", "pack": "500 g", "packs": 2, "unit_price": 1.09, "total": 2.18, "for": ["Pon", "Sub"]},
-    {"chain": "lidl", "name": "Tjestenina fusilli", "pack": "500 g", "packs": 1, "unit_price": 0.79, "total": 0.79},
-    {"chain": "konzum", "name": "Krumpir 5 kg", "pack": "5 kg", "packs": 1, "unit_price": 1.85, "total": 1.85},
-    {"chain": "konzum", "name": "Slanutak Garden Good", "pack": "500 g", "packs": 1, "unit_price": 0.99, "total": 0.99},
-    {"chain": "spar", "name": "Svinjski vrat bez kosti", "pack": "cca 1 kg", "packs": 1, "unit_price": 3.99, "total": 3.99, "for": ["Sub", "Ned"]},
-    {"chain": "plodine", "name": "Jaja M 10/1", "pack": "10 kom", "packs": 2, "unit_price": 2.69, "total": 5.38},
-    {"chain": "plodine", "name": "Tuna filet u biljnom ulju Eva", "pack": "100 g", "packs": 3, "unit_price": 1.99, "total": 5.97, "for": ["Ned"]}
+    {
+      "chain": "lidl",
+      "name": "Svježi pileći filet",
+      "pack": "cca 1 kg",
+      "packs": 1,
+      "unit_price": 4.59,
+      "total": 4.59,
+      "for": [
+        "Pon",
+        "Uto"
+      ],
+      "promo": true
+    },
+    {
+      "chain": "lidl",
+      "name": "Oslić BG Hubbsi XXL",
+      "pack": "1 kg",
+      "packs": 1,
+      "unit_price": 3.66,
+      "total": 3.66,
+      "for": [
+        "Sri"
+      ]
+    },
+    {
+      "chain": "lidl",
+      "name": "Svinjsko mljeveno meso",
+      "pack": "500 g",
+      "packs": 2,
+      "unit_price": 1.99,
+      "total": 3.98,
+      "for": [
+        "Čet",
+        "Pet"
+      ]
+    },
+    {
+      "chain": "lidl",
+      "name": "Svježi sir 0% m.m.",
+      "pack": "500 g",
+      "packs": 2,
+      "unit_price": 1.09,
+      "total": 2.18,
+      "for": [
+        "Pon",
+        "Sub"
+      ]
+    },
+    {
+      "chain": "lidl",
+      "name": "Tjestenina fusilli",
+      "pack": "500 g",
+      "packs": 1,
+      "unit_price": 0.79,
+      "total": 0.79
+    },
+    {
+      "chain": "konzum",
+      "name": "Krumpir 5 kg",
+      "pack": "5 kg",
+      "packs": 1,
+      "unit_price": 1.85,
+      "total": 1.85
+    },
+    {
+      "chain": "konzum",
+      "name": "Slanutak Garden Good",
+      "pack": "500 g",
+      "packs": 1,
+      "unit_price": 0.99,
+      "total": 0.99
+    },
+    {
+      "chain": "spar",
+      "name": "Svinjski vrat bez kosti",
+      "pack": "cca 1 kg",
+      "packs": 1,
+      "unit_price": 3.99,
+      "total": 3.99,
+      "for": [
+        "Sub",
+        "Ned"
+      ]
+    },
+    {
+      "chain": "plodine",
+      "name": "Jaja M 10/1",
+      "pack": "10 kom",
+      "packs": 2,
+      "unit_price": 2.69,
+      "total": 5.38
+    },
+    {
+      "chain": "plodine",
+      "name": "Tuna filet u biljnom ulju Eva",
+      "pack": "100 g",
+      "packs": 3,
+      "unit_price": 1.99,
+      "total": 5.97,
+      "for": [
+        "Ned"
+      ]
+    }
   ],
-  "single_store": {"chain": "plodine", "total": 41.10},
+  "single_store": {
+    "chain": "plodine",
+    "total": 41.1
+  },
   "recipes": [
-    {"id": "pile-riza", "title": "Pileći file s rižom i brokulom", "image_keywords": "grilled chicken breast rice broccoli plate", "portions": 2, "protein_g": 78, "kcal": 790, "time_min": 25,
-     "ingredients": ["600 g pileći file", "160 g riža (suha)", "400 g brokula", "2 žlice maslinovo ulje", "sol, papar, češnjak"],
-     "steps": ["Rižu skuhaj (1:2 voda).", "File nareži na trakice, začini, peci na jakoj vatri 6-7 min.", "Brokulu kuhaj na pari 5 min, dodaj češnjak i ulje.", "Podijeli na 2 porcije, jedna za sutra."]},
-    {"id": "oslic", "title": "Oslić iz pećnice s krumpirom i blitvom", "image_keywords": "baked hake fish fillet potatoes", "portions": 1, "protein_g": 70, "kcal": 760, "time_min": 35,
-     "ingredients": ["500 g oslić", "400 g krumpir", "200 g blitva", "2 žlice maslinovo ulje", "limun, sol, papar"],
-     "steps": ["Krumpir na ploške, 20 min na 220 °C.", "Dodaj oslića, još 15 min.", "Blitvu kratko prokuhaj, pomiješaj s krumpirom i uljem."]},
-    {"id": "bolonjez", "title": "Bolonjez od mljevenog mesa s tjesteninom", "image_keywords": "pasta bolognese minced meat", "portions": 2, "protein_g": 72, "kcal": 900, "time_min": 40,
-     "ingredients": ["1 kg mljeveno meso", "200 g tjestenina (suha)", "1 luk, 2 češnja češnjaka", "400 g pasirana rajčica", "100 g skuta za posluživanje"],
-     "steps": ["Luk i češnjak na ulju, dodaj meso, prži dok ne porumeni.", "Dodaj rajčicu, kuhaj 20 min.", "Tjesteninu skuhaj, pomiješaj, posluži sa žlicom skute."]},
-    {"id": "vrat", "title": "Svinjski vrat s pečenim povrćem", "image_keywords": "roast pork neck vegetables tray", "portions": 2, "protein_g": 75, "kcal": 1000, "time_min": 60,
-     "ingredients": ["1 kg svinjski vrat", "500 g krumpir", "2 paprike, 2 mrkve, 1 luk", "ulje, sol, papar, origano"],
-     "steps": ["Povrće na pleh, meso na vrh, začini.", "50 min na 200 °C, okreni na pola."]},
-    {"id": "omlet", "title": "Omlet od 5 jaja sa skutom i špinatom", "image_keywords": "spinach omelette cottage cheese", "portions": 1, "protein_g": 55, "kcal": 520, "time_min": 10,
-     "ingredients": ["5 jaja", "150 g skuta", "100 g špinat"],
-     "steps": ["Špinat prodinstaj 2 min.", "Dodaj umućena jaja, na kraju skutu.", "Poklopi 3 min na laganoj vatri."]},
-    {"id": "tuna", "title": "Tuna salata sa slanutkom", "image_keywords": "tuna chickpea salad bowl", "portions": 1, "protein_g": 60, "kcal": 600, "time_min": 10,
-     "ingredients": ["3 konzerve tune (100 g)", "250 g kuhani slanutak", "krastavac, rajčica, luk", "limun, maslinovo ulje"],
-     "steps": ["Sve nareži, pomiješaj, začini."]}
+    {
+      "id": "pile-riza",
+      "title": "Pileći file s rižom i brokulom",
+      "image_keywords": "grilled chicken breast rice broccoli plate",
+      "portions": 2,
+      "protein_g": 78,
+      "kcal": 790,
+      "time_min": 25,
+      "ingredients": [
+        "600 g pileći file",
+        "160 g riža (suha)",
+        "400 g brokula",
+        "2 žlice maslinovo ulje",
+        "sol, papar, češnjak"
+      ],
+      "steps": [
+        "Rižu skuhaj (1:2 voda).",
+        "File nareži na trakice, začini, peci na jakoj vatri 6-7 min.",
+        "Brokulu kuhaj na pari 5 min, dodaj češnjak i ulje.",
+        "Podijeli na 2 porcije, jedna za sutra."
+      ],
+      "image_ingredient": "Chicken Breast",
+      "image_url": "https://www.themealdb.com/images/media/meals/nmxec11782498644.jpg"
+    },
+    {
+      "id": "oslic",
+      "title": "Oslić iz pećnice s krumpirom i blitvom",
+      "image_keywords": "baked hake fish fillet potatoes",
+      "portions": 1,
+      "protein_g": 70,
+      "kcal": 760,
+      "time_min": 35,
+      "ingredients": [
+        "500 g oslić",
+        "400 g krumpir",
+        "200 g blitva",
+        "2 žlice maslinovo ulje",
+        "limun, sol, papar"
+      ],
+      "steps": [
+        "Krumpir na ploške, 20 min na 220 °C.",
+        "Dodaj oslića, još 15 min.",
+        "Blitvu kratko prokuhaj, pomiješaj s krumpirom i uljem."
+      ],
+      "image_ingredient": "White Fish"
+    },
+    {
+      "id": "bolonjez",
+      "title": "Bolonjez od mljevenog mesa s tjesteninom",
+      "image_keywords": "pasta bolognese minced meat",
+      "portions": 2,
+      "protein_g": 72,
+      "kcal": 900,
+      "time_min": 40,
+      "ingredients": [
+        "1 kg mljeveno meso",
+        "200 g tjestenina (suha)",
+        "1 luk, 2 češnja češnjaka",
+        "400 g pasirana rajčica",
+        "100 g skuta za posluživanje"
+      ],
+      "steps": [
+        "Luk i češnjak na ulju, dodaj meso, prži dok ne porumeni.",
+        "Dodaj rajčicu, kuhaj 20 min.",
+        "Tjesteninu skuhaj, pomiješaj, posluži sa žlicom skute."
+      ],
+      "image_ingredient": "Minced Pork"
+    },
+    {
+      "id": "vrat",
+      "title": "Svinjski vrat s pečenim povrćem",
+      "image_keywords": "roast pork neck vegetables tray",
+      "portions": 2,
+      "protein_g": 75,
+      "kcal": 1000,
+      "time_min": 60,
+      "ingredients": [
+        "1 kg svinjski vrat",
+        "500 g krumpir",
+        "2 paprike, 2 mrkve, 1 luk",
+        "ulje, sol, papar, origano"
+      ],
+      "steps": [
+        "Povrće na pleh, meso na vrh, začini.",
+        "50 min na 200 °C, okreni na pola."
+      ],
+      "image_ingredient": "Pork"
+    },
+    {
+      "id": "omlet",
+      "title": "Omlet od 5 jaja sa skutom i špinatom",
+      "image_keywords": "spinach omelette cottage cheese",
+      "portions": 1,
+      "protein_g": 55,
+      "kcal": 520,
+      "time_min": 10,
+      "ingredients": [
+        "5 jaja",
+        "150 g skuta",
+        "100 g špinat"
+      ],
+      "steps": [
+        "Špinat prodinstaj 2 min.",
+        "Dodaj umućena jaja, na kraju skutu.",
+        "Poklopi 3 min na laganoj vatri."
+      ],
+      "image_ingredient": "Eggs"
+    },
+    {
+      "id": "tuna",
+      "title": "Tuna salata sa slanutkom",
+      "image_keywords": "tuna chickpea salad bowl",
+      "portions": 1,
+      "protein_g": 60,
+      "kcal": 600,
+      "time_min": 10,
+      "ingredients": [
+        "3 konzerve tune (100 g)",
+        "250 g kuhani slanutak",
+        "krastavac, rajčica, luk",
+        "limun, maslinovo ulje"
+      ],
+      "steps": [
+        "Sve nareži, pomiješaj, začini."
+      ],
+      "image_ingredient": "Tuna"
+    }
   ],
-  "totals": {"protein_avg_day": 150, "whey_g_day": 30}
+  "totals": {
+    "protein_avg_day": 150,
+    "whey_g_day": 30
+  }
 }

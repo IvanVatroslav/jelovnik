@@ -15,7 +15,10 @@ Plan JSON schema (all strings UTF-8, prices in EUR):
   "shopping": [{"chain": "lidl", "name": "Svježi pileći filet", "pack": "1 kg", "packs": 2,
                 "unit_price": 7.49, "total": 14.98, "for": ["Pon", "Uto"], "promo": true}],
   "single_store": {"chain": "plodine", "total": 61.20},
-  "recipes": [{"id": "pileci-file-riza", "title": "Pileći file s rižom i brokulom", "image_keywords": "grilled chicken breast rice broccoli",
+  "recipes": [{"id": "pileci-file-riza", "title": "Pileći file s rižom i brokulom",
+               "image_url": "https://www.themealdb.com/images/media/meals/....jpg",   # optional, a real dish photo
+               "image_ingredient": "Chicken Breast",                                   # fallback: TheMealDB ingredient name
+               "image_keywords": "grilled chicken breast rice broccoli",
                "portions": 2, "protein_g": 78, "kcal": 790, "time_min": 25,
                "ingredients": ["300 g pileći file", "80 g riža (suha)", "200 g brokula", "1 žlica maslinovo ulje"],
                "steps": ["...", "..."]}],
@@ -67,9 +70,23 @@ def chain_color(chain):
 PALETTE = ["#1f6f5f", "#b4532a", "#5a4f8f", "#a8862b", "#2f6b9a", "#8c3b5e", "#4b7a3a", "#7a5230"]
 
 
-def food_img(title, keywords, idx=0, cls=""):
-    """A photo slot: coloured placeholder with the dish name; JS swaps in a Wikimedia Commons photo."""
+def recipe_image(r):
+    """Static photo URL for a recipe: explicit image_url, else TheMealDB ingredient image, else None."""
+    if r.get("image_url"):
+        return r["image_url"]
+    ing = r.get("image_ingredient")
+    if ing:
+        return "https://www.themealdb.com/images/ingredients/" + urllib.parse.quote(str(ing)) + ".png"
+    return None
+
+
+def food_img(title, keywords, idx=0, cls="", r=None):
+    """A photo slot: static image if the plan has one, else coloured placeholder that JS tries to fill."""
     bg = PALETTE[idx % len(PALETTE)]
+    u = recipe_image(r) if r else None
+    if u:
+        return (f'<div class="ph {cls} loaded" style="background:{bg}"><img src="{e(u)}" alt="" loading="lazy">'
+                f'<span>{e(title)}</span></div>')
     return (f'<div class="ph {cls}" style="background:{bg}" data-q="{e(keywords)}">'
             f'<span>{e(title)}</span></div>')
 
@@ -178,7 +195,7 @@ a{{color:var(--acc)}}
     for d in plan["days"]:
         r = recipes.get(d.get("dinner_recipe"))
         ridx = list(recipes).index(r["id"]) if r else 0
-        img = food_img(r["title"], r["image_keywords"], ridx, "small") if r else ""
+        img = food_img(r["title"], r.get("image_keywords", ""), ridx, "small", r) if r else ""
         label = DAY_HR.get(d.get("label"), d.get("label", ""))
         pills = ""
         if d.get("leftover"):
@@ -217,14 +234,14 @@ a{{color:var(--acc)}}
     # ---------- recipes ----------
     out.append("<h2>Recepti</h2><div class=\"recipes\">")
     for i, r in enumerate(plan.get("recipes", [])):
-        out.append(f'<article class="rc" id="r-{e(r["id"])}">{food_img(r["title"], r["image_keywords"], i)}<div class="b">'
+        out.append(f'<article class="rc" id="r-{e(r["id"])}">{food_img(r["title"], r.get("image_keywords", ""), i, "", r)}<div class="b">'
                    f'<h3>{e(r["title"])}</h3><div class="meta">{e(r.get("portions",1))} porcije · {e(r.get("protein_g","?"))} g prot / porcija · '
                    f'{e(r.get("kcal",""))} kcal · {e(r.get("time_min",""))} min</div>'
                    f'<ul>{"".join(f"<li>{e(x)}</li>" for x in r.get("ingredients", []))}</ul>'
                    f'<ol>{"".join(f"<li>{e(x)}</li>" for x in r.get("steps", []))}</ol></div></article>')
     out.append("</div>")
 
-    out.append("""<div class="foot">Cijene iz javnih cjenika (NN 75/2025) preko cijene.dev. Fotografije jela su ilustrativne (Flickr CC).
+    out.append("""<div class="foot">Cijene iz javnih cjenika (NN 75/2025) preko cijene.dev. Fotografije jela su ilustrativne (TheMealDB).
 Logotipi su zaštitni znakovi trgovaca.</div></div>
 <script>
 try{var K="jelovnik-"+location.pathname;var S=JSON.parse(localStorage.getItem(K)||"{}");
@@ -245,12 +262,182 @@ document.querySelectorAll(".ph[data-q]").forEach(function(ph){var q=ph.dataset.q
     return "".join(out)
 
 
+
+
+# ---------------------------------------------------------------------------
+# Email mode: Gmail-safe HTML (inline styles, tables, no JS/CSS vars/grid).
+# ---------------------------------------------------------------------------
+import urllib.request
+
+_IMG_CACHE = {}
+
+
+def commons_photo(keywords, width=600):
+    """Resolve a Wikimedia Commons photo URL for the keywords at render time. None on failure."""
+    q = str(keywords).strip()
+    if not q:
+        return None
+    if q in _IMG_CACHE:
+        return _IMG_CACHE[q]
+    url = ("https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search"
+           "&gsrnamespace=6&gsrlimit=6&gsrsearch=" + urllib.parse.quote(f"filetype:bitmap {q} food")
+           + f"&prop=imageinfo&iiprop=url|mime&iiurlwidth={width}")
+    out = None
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "jelovnik-weekly/1.0 (personal meal planner)"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            pages = json.loads(r.read().decode("utf-8")).get("query", {}).get("pages", {})
+        cands = []
+        for pg in pages.values():
+            ii = (pg.get("imageinfo") or [{}])[0]
+            if ii.get("thumburl") and ii.get("mime", "").split("/")[-1] in ("jpeg", "png", "webp"):
+                cands.append((pg.get("index", 99), ii["thumburl"]))
+        if cands:
+            out = sorted(cands)[0][1]
+    except Exception:
+        out = None
+    _IMG_CACHE[q] = out
+    return out
+
+
+F = "font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;"
+MUTE = "color:#6b6760;"
+
+
+def _photo_cell(title, keywords, idx, height, r=None):
+    u = recipe_image(r) if r else None
+    bg = PALETTE[idx % len(PALETTE)]
+    if u:
+        return (f'<img src="{e(u)}" width="100%" height="{height}" alt="{e(title)}" '
+                f'style="display:block;width:100%;height:{height}px;object-fit:cover;border-radius:12px 12px 0 0;background:{bg}">')
+    return (f'<div style="height:{height}px;background:{bg};border-radius:12px 12px 0 0;color:#fff;{F}font-weight:700;'
+            f'font-size:15px;padding:0 12px;line-height:{height}px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">{e(title)}</div>')
+
+
+def render_email(plan):
+    recipes = {r["id"]: r for r in plan.get("recipes", [])}
+    rid_index = {rid: i for i, rid in enumerate(recipes)}
+    stores = plan.get("stores", [])
+    by_store = {}
+    for it in plan.get("shopping", []):
+        by_store.setdefault(it["chain"], []).append(it)
+    subtotals = {c: sum(float(i.get("total", 0)) for i in items) for c, items in by_store.items()}
+    grand = sum(subtotals.values())
+    totals = plan.get("totals", {})
+    single = plan.get("single_store") or {}
+
+    card = "background:#ffffff;border:1px solid #e6e1d8;border-radius:12px;"
+    h2 = f'style="{F}font-size:20px;margin:28px 0 10px;color:#1d1d1b"'
+    o = [f'<div style="background:#f6f3ee;padding:16px 10px"><div style="max-width:680px;margin:0 auto;{F}color:#1d1d1b;font-size:15px;line-height:1.45">',
+         f'<h1 style="{F}font-size:26px;margin:0 0 2px">Jelovnik {fmt_date(plan["week_start"])} – {fmt_date(plan["week_end"])}</h1>',
+         f'<div style="{MUTE}font-size:13px;margin-bottom:14px">Cijene: '
+         + ", ".join(f"{chain_name(c)} {fmt_date(d)}" for c, d in sorted(plan.get("archive_dates", {}).items())) + "</div>"]
+
+    # KPIs
+    kp = [(eur(grand), f"ukupno, {len(by_store)} trgovine"), (f'{totals.get("protein_avg_day","–")} g', "proteina / dan"),
+          (str(len(recipes)), "recepata"), (eur(single.get("total")) if single else "–", f'sve u {chain_name(single.get("chain",""))}' if single else "")]
+    o.append('<table role="presentation" width="100%" cellspacing="0" cellpadding="0"><tr>')
+    for i, (v, l) in enumerate(kp):
+        o.append(f'<td width="25%" style="padding:{"0 4px 0 0" if i == 0 else "0 0 0 4px" if i == 3 else "0 4px"}">'
+                 f'<div style="{card}padding:10px 12px"><div style="font-size:20px;font-weight:700">{e(v)}</div>'
+                 f'<div style="{MUTE}font-size:11px;text-transform:uppercase;letter-spacing:.04em">{e(l)}</div></div></td>')
+    o.append("</tr></table>")
+    if plan.get("notes"):
+        o.append('<div style="background:#fff8e6;border:1px solid #f1dfae;border-radius:10px;padding:8px 12px;font-size:13px;margin-top:10px">'
+                 + "<br>".join("• " + e(n) for n in plan["notes"]) + "</div>")
+
+    # stores
+    o.append(f"<h2 {h2}>Trgovine</h2>")
+    for s in stores:
+        c = s["chain"]
+        o.append(f'<a href="{maps_link(s)}" style="text-decoration:none;color:#1d1d1b"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" '
+                 f'style="{card}border-left:5px solid {chain_color(c)};margin-bottom:6px"><tr>'
+                 f'<td width="44" style="padding:8px 4px 8px 10px"><img src="{logo(c)}" width="28" height="28" alt="" style="display:block;border-radius:6px"></td>'
+                 f'<td style="padding:8px 0"><b>{e(chain_name(c))}</b><br><span style="{MUTE}font-size:13px">{e(s.get("address",""))}</span></td>'
+                 f'<td align="right" style="padding:8px 12px;font-weight:700;white-space:nowrap">{eur(subtotals[c]) if c in subtotals else ""}</td></tr></table></a>')
+
+    # week: 2 columns of day cards
+    o.append(f"<h2 {h2}>Tjedan</h2>")
+    days = plan["days"]
+    o.append('<table role="presentation" width="100%" cellspacing="0" cellpadding="0">')
+    for row in range(0, len(days), 2):
+        o.append("<tr>")
+        for col in range(2):
+            if row + col >= len(days):
+                o.append("<td width='50%'></td>")
+                continue
+            d = days[row + col]
+            r = recipes.get(d.get("dinner_recipe"))
+            lr = recipes.get(d.get("lunch_recipe"))
+            pad = "0 4px 8px 0" if col == 0 else "0 0 8px 4px"
+            lunch = e(d.get("lunch", ""))
+            if lr:
+                lunch = f'<a href="#r-{e(lr["id"])}" style="color:#1d1d1b">{lunch}</a>'
+            dinner = e(d.get("dinner", ""))
+            if r:
+                dinner = f'<a href="#r-{e(r["id"])}" style="color:#1d1d1b;text-decoration:none;font-weight:600">{dinner}</a>'
+            left = ' <span style="background:#efeae2;color:#7a6a4f;border-radius:999px;padding:1px 7px;font-size:11px;font-weight:600">ostatak</span>' if d.get("leftover") else ""
+            photo = _photo_cell(r["title"], r.get("image_keywords", ""), rid_index[r["id"]], 120, r) if r else ""
+            o.append(f'<td width="50%" valign="top" style="padding:{pad}"><div style="{card}overflow:hidden">{photo}'
+                     f'<div style="padding:8px 10px 10px">'
+                     f'<div style="{MUTE}font-size:11px;text-transform:uppercase;letter-spacing:.05em">{e(DAY_HR.get(d.get("label"), d.get("label","")))} {fmt_date(d["date"])}</div>'
+                     f'<div style="{MUTE}font-size:13px">Ručak · {lunch}</div>'
+                     f'<div><span style="{MUTE}">Večera · </span>{dinner}{left}</div>'
+                     f'<div style="margin-top:6px;font-size:12px"><span style="background:#e8f3f0;color:#1f6f5f;border-radius:999px;padding:1px 7px;font-weight:600">{e(d.get("protein_g","?"))} g prot</span>'
+                     f' <span style="{MUTE}">{e(d.get("kcal",""))} kcal</span></div></div></div></td>')
+        o.append("</tr>")
+    o.append("</table>")
+
+    # shopping
+    o.append(f"<h2 {h2}>Popis za kupnju</h2>")
+    order = [s["chain"] for s in stores if s["chain"] in by_store] + [c for c in by_store if c not in [s["chain"] for s in stores]]
+    for c in order:
+        st = next((s for s in stores if s["chain"] == c), {"chain": c, "address": ""})
+        o.append(f'<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="{card}margin-bottom:10px;border-collapse:separate">'
+                 f'<tr><td colspan="3" style="padding:8px 12px;border-bottom:1px solid #e6e1d8;border-left:5px solid {chain_color(c)};border-radius:12px 12px 0 0">'
+                 f'<img src="{logo(c)}" width="22" height="22" alt="" style="vertical-align:middle;border-radius:5px;margin-right:6px"><b style="font-size:16px;vertical-align:middle">{e(chain_name(c))}</b>'
+                 f' <span style="{MUTE}font-size:13px;vertical-align:middle">{e(st.get("address",""))}</span>'
+                 f' <a href="{maps_link(st)}" style="font-size:12px;color:#1f6f5f;vertical-align:middle">karta</a>'
+                 f'<span style="float:right;font-weight:700">{eur(subtotals[c])}</span></td></tr>')
+        for it in by_store[c]:
+            promo = ' <span style="background:#fdecec;color:#d9534f;border-radius:999px;padding:0 6px;font-size:11px;font-weight:600">akcija</span>' if it.get("promo") else ""
+            fr = (" · " + ", ".join(it["for"])) if it.get("for") else ""
+            o.append(f'<tr><td width="18" style="padding:7px 0 7px 12px;border-bottom:1px dashed #e6e1d8;vertical-align:top">☐</td>'
+                     f'<td style="padding:7px 8px;border-bottom:1px dashed #e6e1d8">{e(it["name"])}{promo}<br>'
+                     f'<span style="{MUTE}font-size:12px">{e(it.get("pack",""))} × {e(it.get("packs",1))}{e(fr)}</span></td>'
+                     f'<td align="right" style="padding:7px 12px;border-bottom:1px dashed #e6e1d8;white-space:nowrap;vertical-align:top">{eur(it.get("total"))}<br>'
+                     f'<span style="{MUTE}font-size:12px">{eur(it.get("unit_price"))}/kom</span></td></tr>')
+        o.append("</table>")
+    o.append(f'<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#1d1d1b;color:#fff;border-radius:12px"><tr>'
+             f'<td style="padding:10px 14px;font-size:17px">Ukupno</td><td align="right" style="padding:10px 14px;font-size:17px;color:#fff">{eur(grand)}'
+             + (f' <span style="color:#cfc9bf;font-size:12px">· sve u {e(chain_name(single["chain"]))}: {eur(single["total"])}</span>' if single else "") + "</td></tr></table>")
+
+    # recipes
+    o.append(f"<h2 {h2}>Recepti</h2>")
+    for i, r in enumerate(plan.get("recipes", [])):
+        o.append(f'<a name="r-{e(r["id"])}"></a><div id="r-{e(r["id"])}" style="{card}overflow:hidden;margin-bottom:12px">'
+                 + _photo_cell(r["title"], r.get("image_keywords", ""), i, 160, r)
+                 + f'<div style="padding:10px 14px 12px"><div style="font-size:18px;font-weight:700">{e(r["title"])}</div>'
+                 f'<div style="{MUTE}font-size:13px;margin-bottom:6px">{e(r.get("portions",1))} porcije · {e(r.get("protein_g","?"))} g prot / porcija · {e(r.get("kcal",""))} kcal · {e(r.get("time_min",""))} min</div>'
+                 f'<ul style="margin:4px 0 8px;padding-left:18px;font-size:14px">{"".join(f"<li>{e(x)}</li>" for x in r.get("ingredients", []))}</ul>'
+                 f'<ol style="margin:0;padding-left:18px;font-size:14px">{"".join(f"<li style=margin-bottom:2px>{e(x)}</li>" for x in r.get("steps", []))}</ol></div></div>')
+
+    o.append(f'<div style="{MUTE}font-size:11px;margin-top:24px">Cijene iz javnih cjenika (NN 75/2025) preko cijene.dev. Fotografije jela su ilustrativne (TheMealDB). '
+             f'Logotipi su zaštitni znakovi trgovaca.</div></div></div>')
+    return "".join(o)
+
+
 def main():
+    """render.py plan.json out.html [--email out_email.html]"""
     if len(sys.argv) < 3:
         sys.exit(__doc__)
     plan = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     Path(sys.argv[2]).write_text(render(plan), encoding="utf-8")
     print(f"wrote {sys.argv[2]}")
+    if "--email" in sys.argv:
+        out = sys.argv[sys.argv.index("--email") + 1]
+        Path(out).write_text(render_email(plan), encoding="utf-8")
+        print(f"wrote {out}")
 
 
 if __name__ == "__main__":

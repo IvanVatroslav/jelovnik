@@ -1,0 +1,49 @@
+item,group,protein_g_100g,kcal_100g,include_regex,exclude_regex
+pileća prsa,meso,23,110,pile[ćc]a prsa|prsa pile|pile[ćc]i file|pile[ćc]e prsa|chicken breast,panir|dimlj|narez|salam|hrenov|pašt|pašteta|šunk|smrznut|nuggets|medaljon
+pileći batak,meso,18,170,pile[ćc]i batak|batak|zabatak|pile[ćc]a krila|krilca|cijelo pile|pile cijelo,panir|dimlj|narez|smrznut
+pureća prsa,meso,23,105,pure[ćc]a prsa|pure[ćc]i file|puretin,narez|dimlj|salam|šunk|pašt|sa sirom|hrana|ka[šs]ic
+mljeveno meso,meso,19,230,mljeven[ao]? (junet|govedin)|mljevena mije|mljeveno meso|junetina mljev|govedina mljev,smrznut|pljeskav
+junetina,meso,21,160,junet|govedin|but junet|lopatica,mljeven|narez|dimlj|salam|pašt|konzerv|goveđi gulaš|juha
+svinjski lungić,meso,22,120,lungi[ćc]|svinjski file,narez|dimlj|salam
+svinjski vrat,meso,18,230,svinjski vrat|svinjska lopatica|svinjski but|svinjski kotlet|\bkare\b,narez|dimlj|salam|pašt
+jaja,jaja,13,150,jaja (m|l|s)|jaja .*kom|jaja 10|jaja 6|jaja 12|jaja 15|jaja 30|jaja slobodn|jaja podn|svježa jaja|kokošja jaja,čokolad|uskrs|tjesten|prepeli|liker|tekuć|rezanci
+skuta / posni sir,mliječno,12,80,skuta|posni sir|svje[žz]i sir|cottage|zrnati sir|cottage cheese,voćn|slatk|desert|štrukl|krem
+grčki jogurt,mliječno,9,90,gr[čc]ki jogurt|grčki tip|greek|skyr|jogurt .*protein|protein .*jogurt|high protein,voćn|jagod|vanil|borovn|banan|čokol|keks
+jogurt,mliječno,4,60,jogurt,grčk|greek|skyr|voćn|jagod|vanil|borovn|banan|čokol|protein|pitki
+mlijeko,mliječno,3.3,47,(trajno|svje[žz]e)? ?mlijeko (0|1|2|3)|mlijeko .*\d ?%|mlijeko .*\b1\s?l\b,čokol|kakao|bademov|zobeno|sojino|kokos|rižin|kondenz|u prahu|mlijeko za bebe|bebe
+sir polutvrdi,mliječno,25,350,gouda|edamer|edamac|trapist|gauda|ementaler|polutvrdi sir|sir .*gouda,narez|dimlj|topljen|namaz|ribani|u listić
+whey / protein,dodaci,75,380,whey|protein .*prah|proteinski prah|protein powder|isolate|izolat,bar|pločic|napitak|jogurt|puding|kruh|tjesten
+tuna konzerva,riba,25,110,tun[ae] .*(u |ulj|vod|komad|salat)|tuna konzerv|tunjevina,salata s|sendvič|pašt|namaz|umak
+sardina / skuša konzerva,riba,22,200,sardin|skuša u|skuša .*ulj|skuša .*konzerv|inćun,pašt|namaz|salata
+oslić,riba,17,80,osli[ćc]|\bhake\b,panir|štapi
+losos,riba,20,200,losos,dimlj|pašt|namaz|sushi
+skuša / srdela svježa,riba,19,200,skuša svje|srdel|srdela|skuša .*kg|skuša .*\bg\b,konzerv|ulj|pašt|dimlj
+tofu,biljno,12,120,tofu,
+leća,biljno,24,350,\ble[ćc]a\b|crvena le[ćc]a|zelena le[ćc]a,konzerv|juha|gotov|namaz
+slanutak,biljno,19,360,slanutak|slanutka|čičerika|chickpea,humus|namaz
+grah,biljno,21,340,\bgrah\b|grah .*(g|kg)|tetovac|crveni grah|bijeli grah,konzerv|s kobasicom|gotov|juha|varivo|mahun|špinat
+zobene pahuljice,ugljikohidrati,13,370,zobene|zobena|\boat,keks|muesli|musli|granola|pločic|mlijeko|napitak|instant kaša
+riža,ugljikohidrati,7,360,ri[žz]a .*(g|kg)|basmati|jasmin|parboiled|rižu|dugo zrno|rižoto,mlijeko|napitak|čips|kolač|puding|galet|vafl|brašno
+krumpir,ugljikohidrati,2,80,krumpir,čips|pire u|smrznut|pomfrit|salata|štap|škrob|brašno
+tjestenina,ugljikohidrati,12,350,tjestenina|špageti|spaghetti|penne|fusilli|makaroni|rigatoni|farfalle,svje[žz]|punjen|gotov|umak|instant|smrznut|integral
+kruh,ugljikohidrati,8,250,kruh|polubijeli|crni kruh|raženi,tost|prepečen|mrvic|pita|pecivo|smrznut|brioš
+brokula,povrće,3,35,brokul,smrznut|juha|krem
+špinat,povrće,3,23,špinat|spinat,smrznut|pire|juha|štrukl
+kupus,povrće,1.5,25,kupus,kiseli|salata|smrznut|sarma
+mrkva,povrće,1,40,mrkva,sok|smrznut|salata|kolač
+luk,povrće,1,40,\bluk\b|luk crven|crveni luk|luk žuti|luk .*kg,češnjak|mladi|prženi|suh|u prahu
+češnjak,povrće,6,150,češnjak|cesnjak,u prahu|granul|namaz|umak
+rajčica,povrće,1,18,raj[čc]ic|rajcic|paradajz,pelat|pasirana|konzerv|sok|umak|ketchup|sušen|pire|kečap
+paprika,povrće,1,30,paprik,mljeven|u prahu|ajvar|pečen|konzerv|smrznut|filet|punjen|kiseli
+tikvica,povrće,1,20,tikvic,
+krastavac,povrće,1,15,krastav,kiseli|konzerv|salata
+salata zelena,povrće,1,15,zelena salata|kristalka|rukola|matovilac|salata .*mix|miješana salata,voćn|tuna|s piletinom|s mesom|gotov
+banana,voće,1,90,banan,čips|sušen|suh|jogurt|mlijeko|napitak|sok
+jabuka,voće,0.3,52,jabuk,sok|ocat|čips|suš|kolač|pire|kaša
+naranča / mandarina,voće,1,47,naran[čc]|mandarin|klementin,sok|čips|suš|kolač|nektar
+maslinovo ulje,masti,0,900,maslinovo ulje|ekstra djevičansko|extra virgin,sprej|s čilijem|aromat
+suncokretovo ulje,masti,0,900,suncokretovo ulje|jestivo ulje|biljno ulje,sprej
+kikiriki maslac,masti,25,600,kikiriki maslac|maslac od kikirikija|peanut butter,
+orašasti plodovi,masti,20,600,bademi|badem .*g|orasi|orah .*g|lješnjak .*g|kikiriki .*g|indijski orah,čokol|mlijeko|napitak|prelive|karamel|u čokoladi|namaz|slani čips
+sol / začini,ostalo,0,0,kuhinjska sol|morska sol|sol .*kg|vegeta|papar mljeven|crveni papar|origano,
+zamrznuto povrće mix,povrće,3,40,smrznuto povrće|povrće za|mix povrća|povrće miješano|grašak smrznut|mahune smrznut,juha

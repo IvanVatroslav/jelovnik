@@ -1,0 +1,526 @@
+rank,item,group,chain,store_code,store_address,name,brand,quantity,unit,price,special_price,eff_price,price_per_kg,protein_g_100g,kcal_100g,protein_g_per_eur,barcode
+1,pileća prsa,meso,konzum,0602,Ozaljska 148,PILEĆA PRSA BEZ KOŽE CCA 500G/2.5kg SP SV,MEĐIMURSKO PILE,1.00 kg,kg,5.99,5.99,5.99,5.99,23.0,110,38.4,3850220115810
+2,pileća prsa,meso,konzum,0602,Ozaljska 148,PRSA PILEĆA K PLUS BEZ KOŽE,K PLUS,1.00 kg,kg,5.99,,5.99,5.99,23.0,110,38.4,3850159118036
+3,pileća prsa,meso,konzum,0602,Ozaljska 148,PRSA PILEĆA S&F 400g PERUTNINA,SLIM&FIT,0.40 kg,ko,3.69,,3.69,9.23,23.0,110,24.9,3850220154055
+1,pileća prsa,meso,lidl,210,Zadarska Ulica 79,Svježi pileći filet,Naša mesnica,1,ca. 500g,4.59,4.59,4.59,4.59,23.0,110,50.1,2852020000000
+2,pileća prsa,meso,lidl,210,Zadarska Ulica 79,Svježi pileći file cca. 1kg,Mecsek,1,cca. 1kg,4.89,,4.89,4.89,23.0,110,47.0,2846950000000
+3,pileća prsa,meso,lidl,210,Zadarska Ulica 79,"Svježi pileći file, cca. 1kg",,1,ca. 1kg,4.99,,4.99,4.99,23.0,110,46.1,2118211000000
+1,pileća prsa,meso,plodine,045,Ulica Vice Vukova 2,PILECI FILE RINFUZA,CRVENO MESO,,KG,4.59,4.59,4.59,4.59,23.0,110,50.1,2144620
+2,pileća prsa,meso,plodine,045,Ulica Vice Vukova 2,PILECA PRSA BEZ KOZE 540G PERUTNINA,PERUTNINA PRERADA,"0,540 KG",KOM,2.94,,2.94,5.44,23.0,110,42.3,3850220111621
+3,pileća prsa,meso,plodine,045,Ulica Vice Vukova 2,PILECI FILE OP CCA 800 G PILE,PILE,,KG,4.59,4.59,4.59,5.74,23.0,110,40.1,3850220407854
+1,pileća prsa,meso,spar,87064,H. Macanovica 29,PILEĆI FILE S BUDGET,S-BUDGET,"1,0000",kg,5.69,,5.69,5.69,23.0,110,40.4,3856021216923
+2,pileća prsa,meso,spar,87064,H. Macanovica 29,PILEĆA PRSA BEZ KOŽE S BUDGET,S-BUDGET,"1,0000",kg,5.99,,5.99,5.99,23.0,110,38.4,3856021216930
+3,pileća prsa,meso,spar,87064,H. Macanovica 29,PILEĆI FILE BATKA ZAB. S KOŽOM,S-BUDGET,"1,0000",kg,5.99,,5.99,5.99,23.0,110,38.4,3856021229435
+1,pileći batak,meso,konzum,0602,Ozaljska 148,PIL ZABATAK OBIT PAK VINDIJA,CEKIN,1.00 kg,kg,3.79,3.79,3.79,3.79,18.0,170,47.5,3850159110573
+2,pileći batak,meso,konzum,0602,Ozaljska 148,BATAK PILEĆI K PLUS,K PLUS,1.00 kg,kg,4.09,,4.09,4.09,18.0,170,44.0,3850159118050
+3,pileći batak,meso,konzum,0602,Ozaljska 148,ZABATAK PILEĆI K PLUS,K PLUS,1.00 kg,kg,4.09,,4.09,4.09,18.0,170,44.0,3850159118067
+1,pileći batak,meso,lidl,210,Zadarska Ulica 79,"Svježi pileći batak, cca. 500g",Naša mesnica,1,ca. 500g,4.09,,4.09,4.09,18.0,170,44.0,2868630000000
+2,pileći batak,meso,lidl,210,Zadarska Ulica 79,"Svježi pileći batak, cca 450g",Naša mesnica,1,ca. 450g,4.09,,4.09,4.09,18.0,170,44.0,2846770000000
+3,pileći batak,meso,lidl,210,Zadarska Ulica 79,"Svježi pileći zabatak, cca 550g",Naša mesnica,1,ca. 550g,4.09,,4.09,4.09,18.0,170,44.0,2846790000000
+1,pileći batak,meso,plodine,045,Ulica Vice Vukova 2,PILECI BATAK ZABATAK DIO LEDJA OP CEKIN,VINDIJA CEKIN SVJEZE MESO,,KG,3.05,3.05,3.05,3.05,18.0,170,59.0,3850159658921
+2,pileći batak,meso,plodine,045,Ulica Vice Vukova 2,PILECI ZABATAK RINFUZO,CRVENO MESO,,KG,3.39,,3.39,3.39,18.0,170,53.1,9385022011139
+3,pileći batak,meso,plodine,045,Ulica Vice Vukova 2,PILECA KRILA SPICEY PECENA 500G AMADORI,AMADORI,"0,500 KG",KOM,1.8,,1.8,3.6,18.0,170,50.0,plodine:181040
+1,pileći batak,meso,spar,87064,H. Macanovica 29,PILEĆA KRILA S BUDGET,S-BUDGET,"1,0000",kg,3.29,,3.29,3.29,18.0,170,54.7,3856021216954
+2,pileći batak,meso,spar,87064,H. Macanovica 29,PILEĆI BATAK SA ZABATKOM,S-BUDGET,"1,0000",kg,3.98,,3.98,3.98,18.0,170,45.2,3856021216947
+3,pileći batak,meso,spar,87064,H. Macanovica 29,PILEĆI BATAK OP,Cekin,"1,0000",kg,4.69,,4.69,4.69,18.0,170,38.4,3850159110597
+1,pureća prsa,meso,konzum,0602,Ozaljska 148,BOŽIĆNA PURETINA SVJ -POLOVICA VINDIJA,VINDON,1.00 kg,kg,7.49,,7.49,7.49,23.0,105,30.7,3850339407073
+2,pureća prsa,meso,konzum,0602,Ozaljska 148,PUREĆI FILE OD PRSA,ZAKŁAD DROBIARSKI,1.00 kg,kg,9.99,,9.99,9.99,23.0,105,23.0,konzum:90670129
+3,pureća prsa,meso,konzum,0602,Ozaljska 148,PUREĆA PRSA VAKUM CCA 1 kg,AIA,1.00 kg,kg,10.19,,10.19,10.19,23.0,105,22.6,konzum:90408545
+1,pureća prsa,meso,lidl,210,Zadarska Ulica 79,Hipp BIO meni povrće/puretina,,0.22,220g,2.05,,2.05,9.32,23.0,105,24.7,9062300103493
+2,pureća prsa,meso,lidl,210,Zadarska Ulica 79,"Svježi pureći file, 850g",-,0.85,850g,8.99,,8.99,10.58,23.0,105,21.7,5995885819586
+3,pureća prsa,meso,lidl,210,Zadarska Ulica 79,Pureća prsa bk,Naša mesnica,0.85,850g,8.99,,8.99,10.58,23.0,105,21.7,4335619247239
+1,pureća prsa,meso,plodine,045,Ulica Vice Vukova 2,ONE SENSITIVE CAT PURETINA/RIZA 750 G,NESTLE PURINA,"0,750 KG",KOM,3.98,,3.98,5.31,23.0,105,43.3,8445291803114
+2,pureća prsa,meso,plodine,045,Ulica Vice Vukova 2,BEBIVITA 190 G BROKULA RIZA PURETINA,VIVERA OSTALO - BEBIVITA,"0,190 KG",KOM,1.11,1.11,1.11,5.84,23.0,105,39.4,9062300133391
+3,pureća prsa,meso,plodine,045,Ulica Vice Vukova 2,"ONE CAT PURETINA I RIZA 2,8 KG",NESTLE PURINA,"2,8 KG",KOM,18.99,,18.99,6.78,23.0,105,33.9,8445291930100
+1,pureća prsa,meso,spar,87064,H. Macanovica 29,PUREĆI FILE 500 g,Perutnina,"0,5000",kg,6.69,,6.69,13.38,23.0,105,17.2,3838977036138
+2,pureća prsa,meso,spar,87064,H. Macanovica 29,PUREĆI FILE 475 g,Vindon,"0,4750",kg,6.59,,6.59,13.87,23.0,105,16.6,3850339402665
+1,mljeveno meso,meso,konzum,0602,Ozaljska 148,MIJEŠANO MLJEVENO MESO 750 g K PLUS,K PLUS,0.75 kg,ko,5.49,,5.49,7.32,19.0,230,26.0,3850139280371
+2,mljeveno meso,meso,konzum,0602,Ozaljska 148,PUREĆE MLJEVENO MESO 700g,VINDON,0.70 kg,ko,5.29,,5.29,7.56,19.0,230,25.1,3850339413081
+3,mljeveno meso,meso,konzum,0602,Ozaljska 148,PUREĆE MLJEVENO MESO 500g VINDIJA,VINDON,0.50 kg,ko,5.69,,5.69,11.38,19.0,230,16.7,3850339413043
+1,mljeveno meso,meso,lidl,210,Zadarska Ulica 79,Svinjsko mljeveno meso,Naša mesnica,0.5,500g,1.99,,1.99,3.98,19.0,230,47.7,4335619247437
+2,mljeveno meso,meso,lidl,210,Zadarska Ulica 79,Mljeveno meso junetina,Naša mesnica,0.45,450g,5.39,,5.39,11.98,19.0,230,15.9,20432614
+1,mljeveno meso,meso,plodine,045,Ulica Vice Vukova 2,SVINJSKO MLJEVENO MESO E500 G,MAP PAKIRANJA,"0,500 KG",KOM,1.99,,1.99,3.98,19.0,230,47.7,3856031235914
+2,mljeveno meso,meso,plodine,045,Ulica Vice Vukova 2,MIJESANO MLJEVENO MESO E540 G+ 50 G GRATIS,MAP PAKIRANJA,"0,590 KG",KOM,3.18,,3.18,5.39,19.0,230,35.3,3850139521177
+3,mljeveno meso,meso,plodine,045,Ulica Vice Vukova 2,MIJESANO MLJEVENO MESO E450 G MAP,MAP PAKIRANJA,"0,450 KG",KOM,2.99,,2.99,6.64,19.0,230,28.6,3858890183573
+1,mljeveno meso,meso,spar,87064,H. Macanovica 29,Miješano mljeveno meso,SPAR,"1,0000",kg,10.29,,10.29,10.29,19.0,230,18.5,3856021210303
+2,mljeveno meso,meso,spar,87064,H. Macanovica 29,PUREĆE MLJEVENO MESO 450 g,Perutnina,"0,4500",kg,4.99,,4.99,11.09,19.0,230,17.1,3838977042139
+3,mljeveno meso,meso,spar,87064,H. Macanovica 29,PUREĆE MLJEVENO MESO 500 g,Vindon,"0,5000",kg,5.99,,5.99,11.98,19.0,230,15.9,3850339413043
+1,junetina,meso,konzum,0602,Ozaljska 148,KITTY MM GOVEDINA 100g ALU,KITTY,0.10 kg,ko,0.49,,0.49,4.9,21.0,160,42.9,3850334028389
+2,junetina,meso,konzum,0602,Ozaljska 148,BUDDY MP GOVEDINA 100 g,BUDDY,0.10 kg,ko,0.49,,0.49,4.9,21.0,160,42.9,3850334432650
+3,junetina,meso,konzum,0602,Ozaljska 148,PEČENJE SVINJSKO BLAGDANSKO LOPATICA PIK,PIK VRBOVEC,1.00 kg,kg,5.49,,5.49,5.49,21.0,160,38.3,3850139541144
+1,junetina,meso,lidl,210,Zadarska Ulica 79,"Svinjska lopatica b.k., komad",Naša mesnica,1,ca. 2kg,3.69,,3.69,3.69,21.0,160,56.9,2846910000000
+2,junetina,meso,lidl,210,Zadarska Ulica 79,Rolana lopatica s kožom,Pikok,1,"cca.1,3kg",4.89,,4.89,4.89,21.0,160,42.9,2123859000000
+3,junetina,meso,lidl,210,Zadarska Ulica 79,"Andro Rolana lopatica bk, cca.1,2kg",,1,"cca. 1,2kg",5.49,,5.49,5.49,21.0,160,38.3,2152613000000
+1,junetina,meso,plodine,045,Ulica Vice Vukova 2,NOODLES GOVEDINA 4X70 G FINO,FINO,"0,280 KG",KOM,1.19,1.19,1.19,4.25,21.0,160,49.4,3856025876673
+2,junetina,meso,plodine,045,Ulica Vice Vukova 2,SV.LOPATICA. S.K I SPEKOM-NEOBRADJENA,CRVENO MESO,,KG,4.29,,4.29,4.29,21.0,160,49.0,plodine:185238
+3,junetina,meso,plodine,045,Ulica Vice Vukova 2,LOPATICA ZA OKR.RF BLACK K-RUCKA,FACKELMANN,1 KOM,KOM,4.29,,4.29,4.29,21.0,160,49.0,4008033243957
+1,junetina,meso,spar,87064,H. Macanovica 29,Svinjska lopatica bez kosti HR,SPAR,"1,0000",kg,4.99,,4.99,4.99,21.0,160,42.1,3859892958930
+2,junetina,meso,spar,87064,H. Macanovica 29,Teleća lopatica s kosti,,"1,0000",kg,10.29,,10.29,10.29,21.0,160,20.4,3859892958558
+3,junetina,meso,spar,87064,H. Macanovica 29,Teleća lopatica bez kosti,SPAR,"1,0000",kg,12.99,,12.99,12.99,21.0,160,16.2,spar:321957
+1,svinjski lungić,meso,konzum,0602,Ozaljska 148,SVINJSKI FILE VAC,PIK VRBOVEC,1.00 kg,kg,5.99,5.99,5.99,5.99,22.0,120,36.7,3850139540925
+2,svinjski lungić,meso,konzum,0602,Ozaljska 148,MARINIRANI SVINJSKI FILE PIK,PIK VRBOVEC,1.00 kg,kg,8.79,,8.79,8.79,22.0,120,25.0,3850139437768
+1,svinjski lungić,meso,lidl,210,Zadarska Ulica 79,"Svinjski file, cca. 400g",Naša mesnica,1,ca. 400g,8.89,,8.89,8.89,22.0,120,24.7,2874970000000
+2,svinjski lungić,meso,lidl,210,Zadarska Ulica 79,Svinjski file s marmeladom od nara.,Deluxe,0.09,90g,1.99,,1.99,22.11,22.0,120,10.0,4056489796824
+1,svinjski lungić,meso,plodine,045,Ulica Vice Vukova 2,S.JASTUCIC LUNGIC-SIR 85 G,,"0,085 KG",KOM,1.79,,1.79,21.06,22.0,120,10.4,8424465949643
+1,svinjski lungić,meso,spar,87064,H. Macanovica 29,SVINJSKI FILE HR VP,SPAR,"1,0000",kg,7.99,,7.99,7.99,22.0,120,27.5,3856021231254
+2,svinjski lungić,meso,spar,87064,H. Macanovica 29,Svinjski file,,"1,0000",kg,8.89,,8.89,8.89,22.0,120,24.7,3858891521145
+3,svinjski lungić,meso,spar,87064,H. Macanovica 29,Svinjski file HR,,"1,0000",kg,8.99,,8.99,8.99,22.0,120,24.5,3859892958602
+1,svinjski vrat,meso,konzum,0602,Ozaljska 148,SOČNI KARE U MARINADI 400 g,AVE,0.40 kg,ko,6.19,,6.19,15.48,18.0,230,11.6,3831020349391
+1,svinjski vrat,meso,lidl,210,Zadarska Ulica 79,"Svinjska lopatica b.k., komad",Naša mesnica,1,ca. 2kg,3.69,,3.69,3.69,18.0,230,48.8,2846910000000
+2,svinjski vrat,meso,lidl,210,Zadarska Ulica 79,Svinjski but b.k. komad,Naša mesnica,1,"ca. 1,1kg",3.89,,3.89,3.89,18.0,230,46.3,2846870000000
+3,svinjski vrat,meso,lidl,210,Zadarska Ulica 79,"Svinjski kare b.k., komad",Naša mesnica,1,ca. 2kg,4.49,,4.49,4.49,18.0,230,40.1,2846920000000
+1,svinjski vrat,meso,plodine,045,Ulica Vice Vukova 2,SV.KARE BEZ KOSTIJU I KAT,CRVENO MESO,,KG,4.99,,4.99,4.99,18.0,230,36.1,plodine:185045
+2,svinjski vrat,meso,plodine,045,Ulica Vice Vukova 2,SVINJSKI KARE S KOZOM I KAT.,CRVENO MESO,,KG,5.29,,5.29,5.29,18.0,230,34.0,plodine:185229
+3,svinjski vrat,meso,plodine,045,Ulica Vice Vukova 2,SV.KARE BK ODREZAK MAP E400 G,CRVENO MESO,"0,400 KG",KOM,3.05,,3.05,7.63,18.0,230,23.6,3858881619081
+1,svinjski vrat,meso,spar,87064,H. Macanovica 29,Svinjski vrat bez kosti,Vlastite potrebe,"1,0000",kg,3.99,3.99,3.99,3.99,18.0,230,45.1,8421384096434
+2,svinjski vrat,meso,spar,87064,H. Macanovica 29,Svinjski but bez kosti,SPAR,"1,0000",kg,3.99,,3.99,3.99,18.0,230,45.1,3858891521152
+3,svinjski vrat,meso,spar,87064,H. Macanovica 29,Svinjski vrat s kosti,,"1,0000",kg,4.25,,4.25,4.25,18.0,230,42.4,3850139281194
+1,jaja,jaja,lidl,210,Zadarska Ulica 79,Vafel jaja SK3,Favorina,0.25,250g,2.25,,2.25,9.0,13.0,150,14.4,20048747
+2,jaja,jaja,lidl,210,Zadarska Ulica 79,Jaja marcipan SK3,Favorina,0.1,100g,1.38,,1.38,13.8,13.0,150,9.4,20069315
+1,jaja,jaja,plodine,045,Ulica Vice Vukova 2,BIO JAJA 6/1,,,KOM,2.99,,2.99,2.99,13.0,150,43.5,3857500131546
+2,jaja,jaja,plodine,045,Ulica Vice Vukova 2,COK JAJA MIX RINF 1 KG SORINI,SORINI,"1,000 KG",KG,7.95,,7.95,7.95,13.0,150,16.4,plodine:843910
+3,jaja,jaja,plodine,045,Ulica Vice Vukova 2,COKOLADNA JAJA MLIJECNA LJES. ZITARICE MAXI 250 G WITOR'S,ITALIJA - UNOS,"0,250 KG",KOM,1.0,,1.0,66.67,13.0,150,1.9,8003535082536
+1,jaja,jaja,spar,87064,H. Macanovica 29,JAJA S BUDGET M 10/1,S-BUDGET,"10,0000",kom,2.45,,2.45,4.08,13.0,150,31.9,3858889110177
+2,jaja,jaja,spar,87064,H. Macanovica 29,JAJA SPAR M RAZRED 6/1,SPAR,"6,0000",kom,1.59,1.59,1.59,4.42,13.0,150,29.4,3856021203084
+3,jaja,jaja,spar,87064,H. Macanovica 29,JAJA S BUDG.M PODNI UZGOJ 18/1,S-BUDGET,"18,0000",kom,5.09,,5.09,4.71,13.0,150,27.6,3856021232787
+1,skuta / posni sir,mliječno,konzum,0602,Ozaljska 148,NAMAZ PROTEIN SVJEŽI SIR VIVIS 100 g,VIVIS,0.10 kg,ko,1.35,,1.35,13.5,12.0,80,8.9,3850108058918
+2,skuta / posni sir,mliječno,konzum,0602,Ozaljska 148,SIR SVJEŽI SKUTA 300g PAŠKA,PAŠKA SIRANA,0.30 kg,ko,4.69,,4.69,15.63,12.0,80,7.7,3859889426060
+1,skuta / posni sir,mliječno,lidl,210,Zadarska Ulica 79,Svježi sir 0% m.m.,Pilos,0.5,500g,1.09,1.09,1.09,2.18,12.0,80,55.0,4056489703969
+2,skuta / posni sir,mliječno,lidl,210,Zadarska Ulica 79,Svježi posni sir,,0.4,400g,0.99,,0.99,2.48,12.0,80,48.4,3859893374401
+3,skuta / posni sir,mliječno,lidl,210,Zadarska Ulica 79,Svježi posni sir XXL,Okusi zavičaja,1,1kg,2.69,,2.69,2.69,12.0,80,44.6,20778996
+1,skuta / posni sir,mliječno,plodine,045,Ulica Vice Vukova 2,STRUKLI SVJEZI SIR 100 G FLUXUS,GASTRO SIROVINE,"0,100 KG",KOM,0.45,,0.45,4.5,12.0,80,26.7,plodine:897214
+2,skuta / posni sir,mliječno,plodine,045,Ulica Vice Vukova 2,STRUKLI SVJEZI SIR I TARTUFI GASTRO,PLODINE GASTRO,"0,100 KG",KOM,0.53,,0.53,5.3,12.0,80,22.6,plodine:897230
+3,skuta / posni sir,mliječno,plodine,045,Ulica Vice Vukova 2,STRUKLI SVJEZI SIR I SPINAT GASTRO,PLODINE GASTRO,"0,100 KG",KOM,0.53,,0.53,5.3,12.0,80,22.6,plodine:897235
+1,skuta / posni sir,mliječno,spar,87064,H. Macanovica 29,SKUTA KRAVLJA PAŠKA 400 g,Paska Sirana,"0,4000",kg,4.69,,4.69,11.72,12.0,80,10.2,3859892884130
+1,grčki jogurt,mliječno,konzum,0602,Ozaljska 148,SKYR PROTEIN ACTIVE ZONE 500g,ACTIVE ZONE,0.50 kg,ko,1.49,1.49,1.49,2.98,9.0,90,30.2,3838900802342
+2,grčki jogurt,mliječno,konzum,0602,Ozaljska 148,JOGURT PROTEIN SKYR ŠUM VOĆE 200g VIND,Z BREGOV,0.20 l,ko,1.35,,1.35,6.75,9.0,90,13.3,3850108032321
+3,grčki jogurt,mliječno,konzum,0602,Ozaljska 148,JOG SOJIN GRČKI TIP NATUR 400 g ALPR,ALPRO,0.40 kg,ko,3.09,,3.09,7.73,9.0,90,11.6,5411188142997
+1,grčki jogurt,mliječno,lidl,210,Zadarska Ulica 79,High Protein napitak soja,Vemondo,1.051,1l,1.19,,1.19,1.19,9.0,90,75.6,4056489749455
+2,grčki jogurt,mliječno,lidl,210,Zadarska Ulica 79,Grčki jogurt 10% XXL,Milbona,1.1,1100g,2.39,,2.39,2.17,9.0,90,41.5,4056489035367
+3,grčki jogurt,mliječno,lidl,210,Zadarska Ulica 79,Skyr,Milbona,1,1kg,2.49,,2.49,2.49,9.0,90,36.1,4335619416659
+1,grčki jogurt,mliječno,plodine,045,Ulica Vice Vukova 2,"LENOR 1,176 L GREEK ISLAND",LENOR,"1,176 L",KOM,3.29,,3.29,2.8,9.0,90,32.1,8006530015226
+2,grčki jogurt,mliječno,plodine,045,Ulica Vice Vukova 2,GRCKI JOGURT NATUR 2% 1 KG DOLINE,DOLINE,1 KG,KOM,3.29,3.29,3.29,3.29,9.0,90,27.4,3856031202930
+3,grčki jogurt,mliječno,plodine,045,Ulica Vice Vukova 2,JOGURT SKYR NATUR 400 G ALPIA,ALPIA,"0,400 KG",KOM,1.49,1.49,1.49,3.73,9.0,90,24.1,3830060751072
+1,grčki jogurt,mliječno,spar,87064,H. Macanovica 29,JOG.GRČKI TIP SPAR 2%M.M.1 kg,SPAR,"1,0000",kg,2.99,,2.99,2.99,9.0,90,30.1,9100000104751
+2,grčki jogurt,mliječno,spar,87064,H. Macanovica 29,JOG.GRČKI TIP SPAR 10%M.M.1 kg,SPAR,"1,0000",kg,3.19,,3.19,3.19,9.0,90,28.2,9100000104720
+3,grčki jogurt,mliječno,spar,87064,H. Macanovica 29,SKYR BIO BEZ LAKTOZE F.F.400 g,SPAR free from,"0,4000",kg,1.39,,1.39,3.47,9.0,90,25.9,9100000071244
+1,jogurt,mliječno,konzum,0602,Ozaljska 148,JOGURT TEK ACTIVE ZONE 0.5 % M.M. 1kg,ACTIVE ZONE,1.00 kg,ko,1.45,,1.45,1.45,4.0,60,27.6,3850334393883
+2,jogurt,mliječno,konzum,0602,Ozaljska 148,JOGURT BALANS+ 1kg PET,BALANS+,1.00 kg,ko,1.59,1.59,1.59,1.59,4.0,60,25.2,3870199002720
+3,jogurt,mliječno,konzum,0602,Ozaljska 148,JOGURT TEK K PLUS 2.8%MM 1.5kg MAXX,K PLUS,1.50 kg,ko,2.49,,2.49,1.66,4.0,60,24.1,3850334598332
+1,jogurt,mliječno,lidl,210,Zadarska Ulica 79,"XXL Tekući jogurt 2,8%",Pilos,1.5,"1,5kg",1.79,,1.79,1.19,4.0,60,33.6,4304493259744
+2,jogurt,mliječno,lidl,210,Zadarska Ulica 79,"Tekući jogurt 0,5%",Pilos,1,1kg,1.39,,1.39,1.39,4.0,60,28.8,4056489926238
+3,jogurt,mliječno,lidl,210,Zadarska Ulica 79,"Tekući jogurt Proviact 1,0%",Pilos,0.18,180g,0.25,,0.25,1.39,4.0,60,28.8,4056489926573
+1,jogurt,mliječno,plodine,045,Ulica Vice Vukova 2,"JOGURT TEKUCI 2,8% 1 KG PET DOLINE",DOLINE,1 KG,KOM,1.29,1.29,1.29,1.29,4.0,60,31.0,3856025852707
+2,jogurt,mliječno,plodine,045,Ulica Vice Vukova 2,"JOGURT TEKUCI 2,8% 1,5 KG DOLINE",DOLINE,"1,5 KG",KOM,1.99,,1.99,1.33,4.0,60,30.1,3856025806748
+3,jogurt,mliječno,plodine,045,Ulica Vice Vukova 2,"JOGURT TEKUCI 2,8% 1,5 KG DUKAT",DUKAT,"1,5 KG",KOM,2.25,,2.25,1.5,4.0,60,26.7,3850354006633
+1,jogurt,mliječno,spar,87064,H. Macanovica 29,"JOGURT TEKUĆI 2,8% ABC 1 kg",,"1,0000",kg,1.89,1.89,1.89,1.89,4.0,60,21.2,3850257062224
+2,jogurt,mliječno,spar,87064,H. Macanovica 29,"JOGURT TEK.3,2% S BUDGET 180 g",S-BUDGET,"0,1800",kg,0.37,,0.37,2.06,4.0,60,19.4,3858889110740
+3,jogurt,mliječno,spar,87064,H. Macanovica 29,"JOGURT TEK.2,8%MM DUKAT 1,5 kg",Dukat,"1,5000",kg,3.29,,3.29,2.19,4.0,60,18.3,3850354016038
+1,mlijeko,mliječno,konzum,0602,Ozaljska 148,MLIJEKO UHT 2.8% M.M. 1L KRAVICA,KRAVICA KRALJICA,1.00 l,ko,0.79,,0.79,0.79,3.3,47,41.8,3856015324337
+2,mlijeko,mliječno,konzum,0602,Ozaljska 148,MLIJEKO TR 2.8% BOCA 6x1 LIT DUKAT,DUKAT,6.00 l,ko,4.98,4.98,4.98,0.83,3.3,47,39.8,3850354015529
+3,mlijeko,mliječno,konzum,0602,Ozaljska 148,MLIJEKO UHT 2.8% MM 1L TE,Z BREGOV,1.00 l,ko,0.94,0.94,0.94,0.94,3.3,47,35.1,3850108020908
+1,mlijeko,mliječno,lidl,210,Zadarska Ulica 79,"Trajno mlijeko 2,8% m.m.",Pilos,1.031,1l,0.65,,0.65,0.65,3.3,47,50.8,3859892277017
+2,mlijeko,mliječno,lidl,210,Zadarska Ulica 79,"Trajno mlijeko 2,8% AK",Pilos,1,1l,0.67,,0.67,0.67,3.3,47,49.3,lidl:6909292
+3,mlijeko,mliječno,lidl,210,Zadarska Ulica 79,"Kravica Kraljica UHT mlijeko 2,8%",,1.031,1l,0.69,,0.69,0.69,3.3,47,47.8,3850257060985
+1,mlijeko,mliječno,plodine,045,Ulica Vice Vukova 2,"MLIJEKO 2,8% 1 L PLODINE",PLODINE,1 L,KOM,0.62,,0.62,0.62,3.3,47,53.2,3856012833764
+2,mlijeko,mliječno,plodine,045,Ulica Vice Vukova 2,"TRAJNO MLIJEKO NASE MLIJEKO 2,8%MM 1L",KRIZEVACKA MLJEKARA,1 L,KOM,0.63,,0.63,0.63,3.3,47,52.4,3859893374418
+3,mlijeko,mliječno,plodine,045,Ulica Vice Vukova 2,"MLIJEKO TRAJNO 2,8% 1L DOLINE",DOLINE,1 L,KOM,0.65,0.65,0.65,0.65,3.3,47,50.8,3856018209372
+1,mlijeko,mliječno,spar,87064,H. Macanovica 29,"MLIJEKO UHT 2,8% S BUDGET 1 L",S-BUDGET,"1,0000",L,0.65,,0.65,0.65,3.3,47,50.8,3858889116247
+2,mlijeko,mliječno,spar,87064,H. Macanovica 29,"MLIJEKO UHT 2,8% M.M SPAR 1 L",SPAR,"1,0000",L,0.66,,0.66,0.66,3.3,47,50.0,3858889112119
+3,mlijeko,mliječno,spar,87064,H. Macanovica 29,"MLIJEKO UHT 2,8% Z BREGOV1 L",Vindija,"1,0000",L,0.94,,0.94,0.94,3.3,47,35.1,3850108020502
+1,sir polutvrdi,mliječno,konzum,0602,Ozaljska 148,SIR POLUTV K PLUS GAUDA 45%MM,K PLUS,1.00 kg,kg,4.29,,4.29,4.29,25.0,350,58.3,3850334137050
+2,sir polutvrdi,mliječno,konzum,0602,Ozaljska 148,SIR POLUT GOUDA CCA 3 kg OLDENBURGER,OLDENBURGER,1.00 kg,kg,4.49,4.49,4.49,4.49,25.0,350,55.7,konzum:91029823
+3,sir polutvrdi,mliječno,konzum,0602,Ozaljska 148,SIR POLUTV EDAMER 40% BAYREUTH,BAYREUTH,1.00 kg,kg,5.99,,5.99,5.99,25.0,350,41.7,3850334172464
+1,sir polutvrdi,mliječno,lidl,210,Zadarska Ulica 79,"Gouda, polutvrdi sir",,1,1kg,4.49,,4.49,4.49,25.0,350,55.7,3830056402285
+2,sir polutvrdi,mliječno,lidl,210,Zadarska Ulica 79,Edamer Blok,,1,ca. 3kg,4.69,,4.69,4.69,25.0,350,53.3,2153403000004
+3,sir polutvrdi,mliječno,lidl,210,Zadarska Ulica 79,Gouda listići,,1,1kg,5.19,,5.19,5.19,25.0,350,48.2,8713734050747
+1,sir polutvrdi,mliječno,plodine,045,Ulica Vice Vukova 2,"SIR EDAMER JAGER CCA 2,5 KG",JAGER,,KG,7.69,,7.69,3.08,25.0,350,81.2,plodine:177240
+2,sir polutvrdi,mliječno,plodine,045,Ulica Vice Vukova 2,SIR EDAMER CCA 3 KG HOOGWEGHT CHEESE,HOOGWEGT,1 KG,KG,3.97,,3.97,3.97,25.0,350,63.0,plodine:890046
+3,sir polutvrdi,mliječno,plodine,045,Ulica Vice Vukova 2,"SIR GOUDA CCA 3,5 KG",,1 KG,KG,4.0,4.0,4.0,4.0,25.0,350,62.5,plodine:629038
+1,sir polutvrdi,mliječno,spar,87064,H. Macanovica 29,Sir Gauda Zel.Doline,Pivka,"1,0000",kg,4.99,4.99,4.99,4.99,25.0,350,50.1,3831051004245
+2,sir polutvrdi,mliječno,spar,87064,H. Macanovica 29,Sir Gouda Dukat,Dukat,"1,0000",kg,6.49,,6.49,6.49,25.0,350,38.5,3850355002726
+3,sir polutvrdi,mliječno,spar,87064,H. Macanovica 29,Sir Gouda S-Budget min.48%m.m.,S-BUDGET,"1,0000",kg,6.49,,6.49,6.49,25.0,350,38.5,4000436612156
+1,whey / protein,dodaci,lidl,210,Zadarska Ulica 79,Rebel Natural Protein Whey SK1,,0.7,700g,21.99,,21.99,31.41,75.0,380,23.9,634158791086
+1,whey / protein,dodaci,plodine,045,Ulica Vice Vukova 2,WHEY PROTEIN COKOLADA 40 G ACTIVE LIFE,ACTIVE LIFE,"0,040 KG",KOM,1.19,,1.19,29.75,75.0,380,25.2,3858891292373
+2,whey / protein,dodaci,plodine,045,Ulica Vice Vukova 2,WHEY PROTEIN VANILIJA 40 G ACTIVE LIFE,ACTIVE LIFE,"0,040 KG",KOM,1.19,,1.19,29.75,75.0,380,25.2,3858891292380
+3,whey / protein,dodaci,plodine,045,Ulica Vice Vukova 2,PROTEIN PRAH 100% WHEY COKO. 270 G ENERVIT,ENERVIT,"0,270 KG",KOM,9.29,,9.29,34.41,75.0,380,21.8,8007640926778
+1,whey / protein,dodaci,spar,87064,H. Macanovica 29,PROTEIN WHEY SWISS CHOC.454 g,POLLEO,"0,4540",kg,24.99,,24.99,55.04,75.0,380,13.6,3858892293300
+2,whey / protein,dodaci,spar,87064,H. Macanovica 29,PROTEIN WHEY VANIL.MADAG.454 g,POLLEO,"0,4540",kg,24.99,,24.99,55.04,75.0,380,13.6,3858892293317
+1,tuna konzerva,riba,konzum,0602,Ozaljska 148,TUNA SALATA MEXICO FRINSA 210/160G,OCEAN,0.16 kg,ko,2.39,,2.39,14.94,25.0,110,16.7,3850334074034
+2,tuna konzerva,riba,konzum,0602,Ozaljska 148,TUNA SALATA TOSCANA 210/160G OCEAN,OCEAN,0.16 kg,ko,2.39,,2.39,14.94,25.0,110,16.7,3850334187000
+3,tuna konzerva,riba,konzum,0602,Ozaljska 148,TUNA SALATA CUS CUS 210/160g OCEAN,OCEAN,0.16 kg,ko,2.39,,2.39,14.94,25.0,110,16.7,3850334189066
+1,tuna konzerva,riba,lidl,210,Zadarska Ulica 79,Tuna u suncokretovom ulju,Nixe,0.74,4x185g,4.77,,4.77,6.45,25.0,110,38.8,4056489957201
+2,tuna konzerva,riba,lidl,210,Zadarska Ulica 79,Tuna u sunc. ulju,Nixe,0.75,750g,5.29,,5.29,7.05,25.0,110,35.5,4335619254237
+3,tuna konzerva,riba,lidl,210,Zadarska Ulica 79,Tuna u vlastitom soku,Nixe,0.39,2x195g,2.99,,2.99,7.67,25.0,110,32.6,4335619179035
+1,tuna konzerva,riba,plodine,045,Ulica Vice Vukova 2,TUNA FILET U BILJNOM ULJU LIMENKA 100 G EVA,EVA BEZ PASTETA,"0,700 KG",KOM,3.49,,3.49,4.99,25.0,110,50.1,3856020263096
+2,tuna konzerva,riba,plodine,045,Ulica Vice Vukova 2,TUNA KOMADICI U BILJNOM ULJU 165 G GIANA,GIANA KONZERVIRANO,"0,135 KG",KOM,0.73,,0.73,5.41,25.0,110,46.2,8595241525228
+3,tuna konzerva,riba,plodine,045,Ulica Vice Vukova 2,TUNA SALATA MEXICANA 160 G BARBA,BARBA,"0,160 KG",KOM,1.69,1.69,1.69,10.56,25.0,110,23.7,3856025890853
+1,tuna konzerva,riba,spar,87064,H. Macanovica 29,TUNA S-BUDGET KOMADIĆI 185 g,S-BUDGET,"0,1300",kg,1.39,,1.39,10.69,25.0,110,23.4,3858889119057
+2,tuna konzerva,riba,spar,87064,H. Macanovica 29,TUNA SALATA GIANA MEXICO 185 g,Giana,"0,1850",kg,2.25,,2.25,12.16,25.0,110,20.6,8594012793378
+3,tuna konzerva,riba,spar,87064,H. Macanovica 29,TUNA SALATA GIANA WESTERN 185g,Giana,"0,1850",kg,2.25,,2.25,12.16,25.0,110,20.6,8595241502717
+1,sardina / skuša konzerva,riba,konzum,0602,Ozaljska 148,SARDINA BILJ ULJE ADRIA MARE 73.5G,ADRIA MARE,0.07 kg,ko,1.09,,1.09,14.83,22.0,200,14.8,3850334019448
+2,sardina / skuša konzerva,riba,konzum,0602,Ozaljska 148,SARDINA BILJ ULJE S LIM AM 75.6G,ADRIA MARE,0.08 kg,ko,1.45,,1.45,19.18,22.0,200,11.5,3850334019486
+3,sardina / skuša konzerva,riba,konzum,0602,Ozaljska 148,SARDINA U MASLINOVOM ULJU AQ 73.5g,ADRIATIC QUEEN,0.07 kg,ko,2.09,,2.09,28.44,22.0,200,7.7,3850160101065
+1,sardina / skuša konzerva,riba,lidl,210,Zadarska Ulica 79,Sardina u suncokretovom ulju,Nixe,0.375,3x125g,2.79,,2.79,7.44,22.0,200,29.6,20413217
+2,sardina / skuša konzerva,riba,lidl,210,Zadarska Ulica 79,"Skuša fileti u ulju, arom.",Nixe,0.17,170g,1.99,,1.99,11.71,22.0,200,18.8,20154455
+3,sardina / skuša konzerva,riba,lidl,210,Zadarska Ulica 79,Marinirani fileti inćuna SK5,Deluxe,0.2,200g,2.79,,2.79,13.95,22.0,200,15.8,20051525
+1,sardina / skuša konzerva,riba,plodine,045,Ulica Vice Vukova 2,SARDINA MIRELA U UMAKU OD RAJCICE 100 G LIM PODRAVKA,EVA BEZ PASTETA,"0,100 KG",KOM,0.93,,0.93,9.3,22.0,200,23.7,3850104277313
+2,sardina / skuša konzerva,riba,plodine,045,Ulica Vice Vukova 2,SARDINA POV.U UMAKU 115 G EVA,EVA BEZ PASTETA,"0,115 KG",KOM,1.59,,1.59,13.83,22.0,200,15.9,3859888140561
+3,sardina / skuša konzerva,riba,plodine,045,Ulica Vice Vukova 2,SARDINE SA RAJCICOM 115 G EVA,EVA BEZ PASTETA,"0,115 KG",KOM,1.59,,1.59,13.83,22.0,200,15.9,3859888140097
+1,sardina / skuša konzerva,riba,spar,87064,H. Macanovica 29,SARDINA S-BUD.SUNC.ULJE 125 g,S-BUDGET,"0,0900",kg,1.04,,1.04,11.56,22.0,200,19.0,3831115304342
+2,sardina / skuša konzerva,riba,spar,87064,H. Macanovica 29,Fileti mariniranih inćuna,,"1,0000",kg,25.99,,25.99,25.99,22.0,200,8.5,spar:252036
+3,sardina / skuša konzerva,riba,spar,87064,H. Macanovica 29,SARDINA EVA BILJNO ULJE 100 g,Eva,"0,0700",kg,1.89,,1.89,27.0,22.0,200,8.1,3856020262525
+1,oslić,riba,konzum,0602,Ozaljska 148,OSLIĆ BEZ GLAVE OCEAN 1kg,OCEAN,1.00 kg,ko,3.99,3.99,3.99,3.99,17.0,80,42.6,3850334388001
+2,oslić,riba,konzum,0602,Ozaljska 148,OSLIĆ FILET OCEAN 500g,OCEAN,0.50 kg,ko,4.79,,4.79,9.58,17.0,80,17.7,3838900844953
+3,oslić,riba,konzum,0602,Ozaljska 148,OSLIĆ BEZ GLAVE 800g HUBSI LEDO,LEDO,0.80 kg,ko,7.69,,7.69,9.61,17.0,80,17.7,3850116048680
+1,oslić,riba,lidl,210,Zadarska Ulica 79,Oslić BG Hubbsi XXL,Ocean Sea,0,1200g,4.39,,4.39,3.66,17.0,80,46.4,4335619246263
+2,oslić,riba,lidl,210,Zadarska Ulica 79,"Oslić bez glave, smrznuti HUBBSI",Ocean Sea,1,1000g,4.69,,4.69,4.69,17.0,80,36.2,20781071
+3,oslić,riba,lidl,210,Zadarska Ulica 79,Ledo oslić bez glave HUBBSI,,0.4,400g,2.99,,2.99,7.48,17.0,80,22.7,3850116048659
+1,oslić,riba,plodine,045,Ulica Vice Vukova 2,OSLIC BG 1 KG FROZY ZMH HORVAT,FROZY,1 KG,KOM,4.29,,4.29,4.29,17.0,80,39.6,3859889284011
+2,oslić,riba,plodine,045,Ulica Vice Vukova 2,BARBA OSLIC BG HOKI 1000 G PLODINE,BARBA,1 KG,KOM,4.38,,4.38,4.38,17.0,80,38.8,3856018202533
+3,oslić,riba,plodine,045,Ulica Vice Vukova 2,BARBA OSLIC BG HUBBSI 1000 G PLODINE,BARBA,1 KG,KOM,4.59,4.59,4.59,4.59,17.0,80,37.0,3856022609922
+1,oslić,riba,spar,87064,H. Macanovica 29,OSLIĆ BEZ GLAVE S-BUDGET 1 kg,S-BUDGET,"1,0000",kg,4.69,,4.69,4.69,17.0,80,36.2,3856021204760
+2,oslić,riba,spar,87064,H. Macanovica 29,OSLIĆ FILET HUBBSY FROZY 500 g,Frozy,"0,5000",kg,4.79,,4.79,9.58,17.0,80,17.7,3858891041889
+3,oslić,riba,spar,87064,H. Macanovica 29,OSLIĆ BEZ GLAVE LEDO 400 g,Ledo,"0,4000",kg,3.9,,3.9,9.75,17.0,80,17.4,3850116048659
+1,losos,riba,konzum,0602,Ozaljska 148,FILET LOSOSA PAK KONZUM,,1.00 kg,kg,15.99,15.99,15.99,15.99,20.0,200,12.5,konzum:90072325
+2,losos,riba,konzum,0602,Ozaljska 148,LOSOS ODREZAK PAK KONZUM,,1.00 kg,kg,18.99,,18.99,18.99,20.0,200,10.5,konzum:90078695
+3,losos,riba,konzum,0602,Ozaljska 148,LOSOS FILET CHAIN NOR OCEAN 2x125 g,OCEAN,0.25 kg,ko,5.99,,5.99,23.96,20.0,200,8.3,3850334098719
+1,losos,riba,lidl,210,Zadarska Ulica 79,Tortelloni crni s lososom,Deluxe,0.25,250g,1.35,,1.35,5.4,20.0,200,37.0,20446154
+2,losos,riba,lidl,210,Zadarska Ulica 79,Pita s lososom,Duc de Coeur,0.4,400g,2.69,,2.69,6.73,20.0,200,29.7,20291020
+3,losos,riba,lidl,210,Zadarska Ulica 79,Losos u lisnatom sa špinatom,Duc de Coeur,0.5,500g,4.39,,4.39,8.78,20.0,200,22.8,20594459
+1,losos,riba,plodine,045,Ulica Vice Vukova 2,LOSOS BKK U SENFU EO 110/55G FJK,KAISER FRANZ JOSEF,"0,550 KG",KOM,2.89,,2.89,5.25,20.0,200,38.1,8595241524887
+2,losos,riba,plodine,045,Ulica Vice Vukova 2,LOSOS BKK U UMAKU OD RAJCICE SA CURRYEM EO 110/55 G FJK,KAISER FRANZ JOSEF,"0,550 KG",KOM,2.89,,2.89,5.25,20.0,200,38.1,8595241524900
+3,losos,riba,plodine,045,Ulica Vice Vukova 2,CESAR HRANA ZA ODRASLE PSE PILETINA LOSOS 800 G,MARS PETCARE,"0,800 KG",KOM,5.49,,5.49,6.86,20.0,200,29.2,5900951359804
+1,losos,riba,spar,87064,H. Macanovica 29,LOSOS FILE S BUDGET,S-BUDGET,"1,0000",kg,19.49,,19.49,19.49,20.0,200,10.3,3856021221149
+2,losos,riba,spar,87064,H. Macanovica 29,SP.LOSOS PAK CHOI RIŽA 400 g,SPAR enjoy,"0,4000",kg,7.99,,7.99,19.97,20.0,200,10.0,3856021232480
+3,losos,riba,spar,87064,H. Macanovica 29,ONIGIRI LOSOS I TERYAKI 100 g,,"0,1000",kg,2.39,,2.39,23.9,20.0,200,8.4,4069384000026
+1,skuša / srdela svježa,riba,konzum,0602,Ozaljska 148,JADRANSKA SRDELA ADRIA MARE 1KG,ADRIA MARE,1.00 kg,ko,3.79,,3.79,3.79,19.0,200,50.1,3850334131423
+2,skuša / srdela svježa,riba,konzum,0602,Ozaljska 148,SRDELA SVJ PAK KONZUM,KONZUM,1.00 kg,kg,4.99,,4.99,4.99,19.0,200,38.1,konzum:02199514
+1,skuša / srdela svježa,riba,lidl,210,Zadarska Ulica 79,"Jadranska srdela, cijela, smrz.",Okusi zavičaja,1,1kg,4.49,,4.49,4.49,19.0,200,42.3,20308797
+2,skuša / srdela svježa,riba,lidl,210,Zadarska Ulica 79,Srdele s kriškom limuna,Okusi zavičaja,0.1,100g,0.95,0.95,0.95,9.5,19.0,200,20.0,20539399
+3,skuša / srdela svježa,riba,lidl,210,Zadarska Ulica 79,"Svj. jadran. srdele, bez gl., očiš.",Naša ribarnica,0.4,400g,4.79,,4.79,11.98,19.0,200,15.9,4056489611394
+1,skuša / srdela svježa,riba,plodine,045,Ulica Vice Vukova 2,SRDELA SVJEZA 1000 G MARINBLU,SVJEZA RIBA,1 KG,KOM,3.0,,3.0,3.0,19.0,200,63.3,20053001
+2,skuša / srdela svježa,riba,plodine,045,Ulica Vice Vukova 2,BARBA JADRANSKA SRDELA 1 KG PLODINE,BARBA,1 KG,KOM,3.99,3.99,3.99,3.99,19.0,200,47.6,3856022607621
+3,skuša / srdela svježa,riba,plodine,045,Ulica Vice Vukova 2,SRDELA JADRAN.1KG FROZY ZMH HORVAT,FROZY,1 KG,KOM,4.29,,4.29,4.29,19.0,200,44.3,3859891927579
+1,skuša / srdela svježa,riba,spar,87064,H. Macanovica 29,SRDELE S POVRĆEM SPAR 105 g,SPAR,"0,1050",kg,1.49,,1.49,14.19,19.0,200,13.4,3831115304120
+2,skuša / srdela svježa,riba,spar,87064,H. Macanovica 29,SKUŠA DESPAR FILET NATUR 125 g,DESPAR,"0,0900",kg,1.99,,1.99,22.11,19.0,200,8.6,8001300240051
+3,skuša / srdela svježa,riba,spar,87064,H. Macanovica 29,SKUŠA IZOLA BRAND POVRĆE 125 g,Delamaris,"0,0510",kg,2.99,,2.99,58.63,19.0,200,3.2,3838929567802
+1,tofu,biljno,konzum,0602,Ozaljska 148,TOFU DIMLJENI EKO 200g,BIO ZONE,0.20 kg,ko,2.12,,2.12,10.6,12.0,120,11.3,3850334021397
+2,tofu,biljno,konzum,0602,Ozaljska 148,TOFU DIMLJENI EKO 190 g ORGO NOVA,ORGO NOVA,0.19 kg,ko,3.59,,3.59,18.89,12.0,120,6.4,3859894407412
+1,tofu,biljno,lidl,210,Zadarska Ulica 79,Tofu SK4,Vemondo,0.18,180g,0.89,,0.89,4.94,12.0,120,24.3,4056489067740
+2,tofu,biljno,lidl,210,Zadarska Ulica 79,Tofu XXL SK1,Vemondo,0.36,2x180g,1.79,,1.79,4.97,12.0,120,24.1,4056489529743
+3,tofu,biljno,lidl,210,Zadarska Ulica 79,Tofu Teryiaki Style,Vitasia,0.18,180g,0.99,,0.99,5.5,12.0,120,21.8,4335619086456
+1,tofu,biljno,plodine,045,Ulica Vice Vukova 2,TOFU NATURAL 200 G WELL WELL,WELL WELL,"0,200 KG",KOM,1.99,,1.99,9.95,12.0,120,12.1,8594191742877
+2,tofu,biljno,plodine,045,Ulica Vice Vukova 2,DIMLJENI TOFU U PAPRICI 190 G SANA DELIKATESE,SANA,"0,190 KG",KOM,4.69,,4.69,24.68,12.0,120,4.9,3858892320662
+3,tofu,biljno,plodine,045,Ulica Vice Vukova 2,SVJEZI TOFU U PAPRICI 190 G SANA DELIKATESE,SANA,"0,190 KG",KOM,4.69,,4.69,24.68,12.0,120,4.9,3858892320655
+1,tofu,biljno,spar,87064,H. Macanovica 29,TOFU NAT.SPAR BIO VEGGIE 250 g,SPAR Veggie,"0,2500",kg,1.99,,1.99,7.96,12.0,120,15.1,9100000760353
+2,tofu,biljno,spar,87064,H. Macanovica 29,TOFU NATUR BIO ANNAPURNA 200 g,,"0,2000",kg,1.69,,1.69,8.45,12.0,120,14.2,3859890343288
+3,tofu,biljno,spar,87064,H. Macanovica 29,TOFU DIMLJENI BIO VEGGIE.250 g,SPAR Veggie,"0,2500",kg,2.65,,2.65,10.6,12.0,120,11.3,9100000739489
+1,leća,biljno,konzum,0602,Ozaljska 148,LEĆA GARDEN GOOD ZELENA 500g,GARDEN GOOD,0.50 kg,ko,1.25,,1.25,2.5,24.0,350,96.0,3838900957103
+2,leća,biljno,konzum,0602,Ozaljska 148,LEĆA GARDEN GOOD 420/240 g,GARDEN GOOD,0.24 kg,ko,0.83,,0.83,3.46,24.0,350,69.4,3838900842850
+3,leća,biljno,konzum,0602,Ozaljska 148,LEĆA EUROCOMPANY CRVENA 500g,EUROCOMPANY,0.50 kg,ko,1.85,,1.85,3.7,24.0,350,64.9,3872084001061
+1,leća,biljno,lidl,210,Zadarska Ulica 79,Leća SK1,Campo Largo,0.5,500g,0.99,,0.99,1.98,24.0,350,121.2,20256296
+2,leća,biljno,lidl,210,Zadarska Ulica 79,"Leća, OM 260g",Freshona,0.4,425ml,0.64,,0.64,2.46,24.0,350,97.6,20243418
+3,leća,biljno,lidl,210,Zadarska Ulica 79,Forum Orgo Vege Burger žuta leća,,0.2,200g,1.89,,1.89,9.45,24.0,350,25.4,3859893778643
+1,leća,biljno,plodine,045,Ulica Vice Vukova 2,LECA 400 G ITALDORO,ITALDORO,"0,400 KG",KOM,0.69,,0.69,1.73,24.0,350,138.7,8009755006956
+2,leća,biljno,plodine,045,Ulica Vice Vukova 2,LECA 400 G SENESI,SENESI,"0,400 KG",KOM,0.79,,0.79,1.98,24.0,350,121.2,8055277600325
+3,leća,biljno,plodine,045,Ulica Vice Vukova 2,PROTEINSKI SNACK CRVENA LECA 90 G ENCIAN,ENCIAN BRAND,"0,900 KG",KOM,1.99,,1.99,2.21,24.0,350,108.6,3858890104967
+1,leća,biljno,spar,87064,H. Macanovica 29,LEĆA CRVENA SPAR 500 g,SPAR,"0,5000",kg,1.99,,1.99,3.98,24.0,350,60.3,3856021206405
+2,leća,biljno,spar,87064,H. Macanovica 29,LEĆA ZELENA SPAR 500 g,SPAR,"0,5000",kg,1.99,,1.99,3.98,24.0,350,60.3,3856021206429
+3,leća,biljno,spar,87064,H. Macanovica 29,LEĆA KUHANA 350 g,,"0,3500",kg,1.69,,1.69,4.83,24.0,350,49.7,3859891496884
+1,slanutak,biljno,konzum,0602,Ozaljska 148,SLANUTAK GARDEN GOOD 500g,GARDEN GOOD,0.50 kg,ko,0.99,,0.99,1.98,19.0,360,96.0,3838900957073
+2,slanutak,biljno,konzum,0602,Ozaljska 148,SLANUTAK 400/240 g E BUONO,E BUONO,0.24 kg,ko,1.05,,1.05,4.38,19.0,360,43.4,3858894141777
+3,slanutak,biljno,konzum,0602,Ozaljska 148,SLANUTAK KUHANI 350g,MADIG,0.35 kg,ko,1.59,,1.59,4.54,19.0,360,41.9,3859891496839
+1,slanutak,biljno,lidl,210,Zadarska Ulica 79,Slanutak,Campo Largo,0.5,500g,0.99,,0.99,1.98,19.0,360,96.0,20214524
+2,slanutak,biljno,lidl,210,Zadarska Ulica 79,"Slanutak u slanoj vodi, OM 240g",Freshona,0.4,425ml,0.59,,0.59,2.46,19.0,360,77.2,4335619378452
+3,slanutak,biljno,lidl,210,Zadarska Ulica 79,"Slanutak u slanoj vodi, OM 390g",Freshona,0.6,3x236ml,1.49,,1.49,3.82,19.0,360,49.7,20941987
+1,slanutak,biljno,plodine,045,Ulica Vice Vukova 2,SLANUTAK 400 G ITALDORO,ITALDORO,"0,400 KG",KOM,0.85,,0.85,2.13,19.0,360,89.2,8009755006901
+2,slanutak,biljno,plodine,045,Ulica Vice Vukova 2,SLANUTAK 400 G SENESI,SENESI,"0,400 KG",KOM,0.86,,0.86,2.15,19.0,360,88.4,8055277600233
+3,slanutak,biljno,plodine,045,Ulica Vice Vukova 2,SLANUTAK 500 G PLODINE,PLODINE,"0,500 KG",KOM,1.23,,1.23,2.46,19.0,360,77.2,3856018234596
+1,slanutak,biljno,spar,87064,H. Macanovica 29,SLANUTAK SPAR 500 g,SPAR,"0,5000",kg,1.99,,1.99,3.98,19.0,360,47.7,3856021206443
+2,slanutak,biljno,spar,87064,H. Macanovica 29,SLANUTAK KUHANI 350 g,,"0,3500",kg,1.49,,1.49,4.26,19.0,360,44.6,3859891496839
+3,slanutak,biljno,spar,87064,H. Macanovica 29,SLANUTAK PODRAVKA LIM. 400 g,Podravka,"0,2400",kg,1.59,,1.59,6.63,19.0,360,28.7,3850104272349
+1,grah,biljno,konzum,0602,Ozaljska 148,GRAH ŠARENI,EUROCOMPANY,1.00 kg,kg,1.19,1.19,1.19,1.19,21.0,340,176.5,3872084007384
+2,grah,biljno,konzum,0602,Ozaljska 148,GRAH GARDEN GOOD ŠARENI 1000g,GARDEN GOOD,1.00 kg,ko,1.99,,1.99,1.99,21.0,340,105.5,3838900957011
+3,grah,biljno,konzum,0602,Ozaljska 148,GRAH SMEĐI GARDEN GOOD 420/240 g,GARDEN GOOD,0.24 kg,ko,0.59,0.59,0.59,2.46,21.0,340,85.4,3838900842881
+1,grah,biljno,lidl,210,Zadarska Ulica 79,Grah pinto rinfuzam cca. 1kg,,1,cca. 1kg,1.39,,1.39,1.39,21.0,340,151.1,3858893922889
+2,grah,biljno,lidl,210,Zadarska Ulica 79,Grah trešnjevac 12/1,,1,ca. 1kg,1.99,,1.99,1.99,21.0,340,105.5,3859890587507
+3,grah,biljno,lidl,210,Zadarska Ulica 79,Zapečeni grah u umaku od rajčice,Freshona,0.42,425ml,0.99,,0.99,2.36,21.0,340,89.0,20517007
+1,grah,biljno,plodine,045,Ulica Vice Vukova 2,SARENI GRAH 400 G SENESI,SENESI,"0,480 KG",KOM,0.86,,0.86,1.79,21.0,340,117.3,8055277600172
+2,grah,biljno,plodine,045,Ulica Vice Vukova 2,GRAH PINTO 500 G OHO,OHO!,"0,500 KG",KOM,0.99,,0.99,1.98,21.0,340,106.1,3856031232050
+3,grah,biljno,plodine,045,Ulica Vice Vukova 2,GRAH TRESNJEVAC ARGENTINA,,,KG,1.99,,1.99,1.99,21.0,340,105.5,plodine:150116
+1,grah,biljno,spar,87064,H. Macanovica 29,Grah šareni RFS,Vlastite potrebe,"1,0000",kg,1.99,,1.99,1.99,21.0,340,105.5,3858889330001
+2,grah,biljno,spar,87064,H. Macanovica 29,GRAH PINTO NATURA 500 g,,"0,5000",kg,1.19,,1.19,2.38,21.0,340,88.2,3859893124938
+3,grah,biljno,spar,87064,H. Macanovica 29,GRAH S-BUDGET CRVENI 400 g,S-BUDGET,"0,2550",kg,0.62,,0.62,2.43,21.0,340,86.4,9100000092744
+1,zobene pahuljice,ugljikohidrati,konzum,0602,Ozaljska 148,PAH ZOBENE RISE&SMILE SITNE 500g,RISE&SMILE,0.50 kg,ko,0.79,,0.79,1.58,13.0,370,82.3,3838900820704
+2,zobene pahuljice,ugljikohidrati,konzum,0602,Ozaljska 148,PAH ZOBENE RISE&SMILE KRUPNE 500g,RISE&SMILE,0.50 kg,ko,0.85,,0.85,1.7,13.0,370,76.5,3838900820698
+3,zobene pahuljice,ugljikohidrati,konzum,0602,Ozaljska 148,PAHULJICE ZOBENE EXTRA 500 g BRUGGEN,BRUGGEN,0.50 kg,ko,1.45,,1.45,2.9,13.0,370,44.8,4008713702804
+1,zobene pahuljice,ugljikohidrati,lidl,210,Zadarska Ulica 79,Zobene pahuljice,Crownfield,1,1kg,1.29,,1.29,1.29,13.0,370,100.8,4335619267114
+2,zobene pahuljice,ugljikohidrati,lidl,210,Zadarska Ulica 79,Zobene pahuljice mekane,Crownfield,0.5,500g,0.75,,0.75,1.5,13.0,370,86.7,20003166
+3,zobene pahuljice,ugljikohidrati,lidl,210,Zadarska Ulica 79,Zobene pahuljice zrnate,Crownfield,0.5,500g,0.75,,0.75,1.5,13.0,370,86.7,4056489413455
+1,zobene pahuljice,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,ZOBENE PAHULJICE SITNE 500 G OHO!,OHO!,"0,500 KG",KOM,0.59,,0.59,1.18,13.0,370,110.2,3856031220910
+2,zobene pahuljice,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,ZOBENA KASA INSTANT SUMSKO VOCE 2GO 65 G MY LIFE,MY LIFE,"0,650 KG",KOM,0.79,,0.79,1.22,13.0,370,106.6,3858891294551
+3,zobene pahuljice,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,ZOBENA KASA INSTANT MALINA 2GO 65 G MY LIFE,MY LIFE,"0,650 KG",KOM,0.79,,0.79,1.22,13.0,370,106.6,3858891294544
+1,zobene pahuljice,ugljikohidrati,spar,87064,H. Macanovica 29,PAH.ZOBENE NAT.PUR SITNE 500 g,SPAR Natur*pur,"0,5000",kg,1.79,,1.79,3.58,13.0,370,36.3,9100000027289
+2,zobene pahuljice,ugljikohidrati,spar,87064,H. Macanovica 29,ZOBENA KAŠA NATUR PUR 500 g,SPAR Natur*pur,"0,5000",kg,2.09,,2.09,4.18,13.0,370,31.1,9100000027241
+3,zobene pahuljice,ugljikohidrati,spar,87064,H. Macanovica 29,ZOBENA KAŠA FREE FROM 375 g,SPAR free from,"0,3750",kg,4.29,,4.29,11.44,13.0,370,11.4,9100000994338
+1,riža,ugljikohidrati,konzum,0602,Ozaljska 148,RIŽA DUGO ZRNO EXTRA 1 kg SCOTTI,RISO SCOTTI,1.00 kg,ko,1.79,,1.79,1.79,7.0,360,39.1,8001860259401
+2,riža,ugljikohidrati,konzum,0602,Ozaljska 148,RIŽA DUGO ZRNO SB 800 g RISO GALLO,RISO GALLO,0.80 kg,ko,1.49,,1.49,1.86,7.0,360,37.6,8001420011821
+3,riža,ugljikohidrati,konzum,0602,Ozaljska 148,RIŽA K PLUS DUGO ZRNO 1kg SB,K PLUS,1.00 kg,ko,1.99,,1.99,1.99,7.0,360,35.2,3850334426352
+1,riža,ugljikohidrati,lidl,210,Zadarska Ulica 79,Riža dugozrnata 5% loma,Golden Sun,1,1kg,1.59,,1.59,1.59,7.0,360,44.0,20189921
+2,riža,ugljikohidrati,lidl,210,Zadarska Ulica 79,Tajlandska riža od jasmina,Vitasia,5,5kg,8.99,,8.99,1.8,7.0,360,38.9,4335619339231
+3,riža,ugljikohidrati,lidl,210,Zadarska Ulica 79,Riža okruglog zrna Originario,Golden Sun,1,1kg,1.99,,1.99,1.99,7.0,360,35.2,20054816
+1,riža,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,RIZA ORIGINARIO 2 KG CURTIRISO,CURTIRISO,2 KG,KOM,2.79,,2.79,1.4,7.0,360,50.0,8017759647662
+2,riža,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,RIZA BIJELA DUGOZRNO 950 G OHO!,OHO!,"0,950 KG",KOM,1.59,,1.59,1.67,7.0,360,41.9,3856031211642
+3,riža,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,RIZA BIJELA DUGOZR.950 G PLODINE,PLODINE,"0,950 KG",KOM,1.59,,1.59,1.67,7.0,360,41.9,3856018214543
+1,riža,ugljikohidrati,spar,87064,H. Macanovica 29,RIŽA S-BUDGET DUGO ZRNO 1 kg,S-BUDGET,"1,0000",kg,1.59,,1.59,1.59,7.0,360,44.0,3856021234422
+2,riža,ugljikohidrati,spar,87064,H. Macanovica 29,RIŽA RIOPAK DUGO ZRNO 1 kg,Rio Pak,"1,0000",kg,1.89,,1.89,1.89,7.0,360,37.0,3859888279445
+3,riža,ugljikohidrati,spar,87064,H. Macanovica 29,RIŽA S-BUDGET PARBOILED 1 kg,S-BUDGET,"1,0000",kg,1.99,,1.99,1.99,7.0,360,35.2,9100000804910
+1,krumpir,ugljikohidrati,konzum,0602,Ozaljska 148,KRUMPIR 5 kg,KORA,5.00 kg,ko,1.85,1.85,1.85,0.37,2.0,80,54.1,3850334386120
+2,krumpir,ugljikohidrati,konzum,0602,Ozaljska 148,KRUMPIR KLIPER 1.5 kg,KORA,1.50 kg,ko,1.49,,1.49,0.99,2.0,80,20.2,3856017203005
+3,krumpir,ugljikohidrati,konzum,0602,Ozaljska 148,KRUMPIR MEĐIMURSKI KALAMPER 2.5 kg,MEĐIMURSKI KALAMPER,2.50 kg,ko,2.49,,2.49,1.0,2.0,80,20.0,3856028687894
+1,krumpir,ugljikohidrati,lidl,210,Zadarska Ulica 79,Krumpir 10kg,,10,10kg,3.9,,3.9,0.39,2.0,80,51.3,20344375
+2,krumpir,ugljikohidrati,lidl,210,Zadarska Ulica 79,Krumpir 5kg,,5,5kg,3.99,,3.99,0.8,2.0,80,25.0,20673482
+3,krumpir,ugljikohidrati,lidl,210,Zadarska Ulica 79,Krumpir 5kg BOKS,,5,5kg,3.99,,3.99,0.8,2.0,80,25.0,20306229
+1,krumpir,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,KRUMPIR 5 KG,,5 KG,KOM,3.49,,3.49,0.7,2.0,80,28.6,3857500091000
+2,krumpir,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,"KRUMPIR ZA PECENJE 2,5 KG",,"2,5 KG",KOM,1.89,1.89,1.89,0.76,2.0,80,26.3,3859893051098
+3,krumpir,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,"KRUMPIR ZA KUHANJE 2,5 KG",,"2,5 KG",KOM,1.89,1.89,1.89,0.76,2.0,80,26.3,3859893051111
+1,krumpir,ugljikohidrati,spar,87064,H. Macanovica 29,KRUMPIR S BUDGET 5 kg,S-BUDGET,"5,0000",kg,3.99,,3.99,0.8,2.0,80,25.0,3858889118197
+2,krumpir,ugljikohidrati,spar,87064,H. Macanovica 29,Krumpir VH rfs,SPAR Vrtovi Hrvatske,"1,0000",kg,0.89,,0.89,0.89,2.0,80,22.5,3859889267700
+3,krumpir,ugljikohidrati,spar,87064,H. Macanovica 29,KRUMPIR ZA KUHANJE VH 3 kg,SPAR Vrtovi Hrvatske,"3,0000",kg,2.99,,2.99,1.0,2.0,80,20.0,3856021227219
+1,tjestenina,ugljikohidrati,konzum,0602,Ozaljska 148,TJEST SIMPLY PASTA SPAGHETTI 3 500 g,SIMPLY PASTA,0.50 kg,ko,0.79,0.79,0.79,1.58,12.0,350,75.9,3858884500638
+2,tjestenina,ugljikohidrati,konzum,0602,Ozaljska 148,TIJESTO K PLUS SPAGHETTI 3 500g,K PLUS,0.50 kg,ko,0.99,,0.99,1.98,12.0,350,60.6,konzum:04057602
+3,tjestenina,ugljikohidrati,konzum,0602,Ozaljska 148,TIJESTO PENNE 400g GRANO DORO,GRANO DORO,0.40 kg,ko,0.8,,0.8,2.0,12.0,350,60.0,3850334349866
+1,tjestenina,ugljikohidrati,lidl,210,Zadarska Ulica 79,Tjestenina fusilli,Combino,1,1000g,0.79,,0.79,0.79,12.0,350,151.9,4056489925736
+2,tjestenina,ugljikohidrati,lidl,210,Zadarska Ulica 79,Tjestenina penne,Combino,1,1000g,0.79,,0.79,0.79,12.0,350,151.9,4056489925743
+3,tjestenina,ugljikohidrati,lidl,210,Zadarska Ulica 79,Sušena tjestenina vijak,Combino,1,1kg,0.89,,0.89,0.89,12.0,350,134.8,20662202
+1,tjestenina,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,TJESTENINA SPAGHETTI 1 KG PLODINE MULINI,MULINI,1 KG,KOM,1.09,,1.09,1.09,12.0,350,110.1,3856018227178
+2,tjestenina,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,TJESTENINA PENNE 1 KG DIVELLA,DIVELLA TJESTENINA,1 KG,KOM,1.29,1.29,1.29,1.29,12.0,350,93.0,8005121010275
+3,tjestenina,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,TJESTENINA FUSILLI 1 KG DIVELLA,DIVELLA TJESTENINA,1 KG,KOM,1.29,1.29,1.29,1.29,12.0,350,93.0,8005121010404
+1,tjestenina,ugljikohidrati,spar,87064,H. Macanovica 29,TJEST.S-BUDGET FUSILLI 1 kg,S-BUDGET,"1,0000",kg,1.69,,1.69,1.69,12.0,350,71.0,9100000715681
+2,tjestenina,ugljikohidrati,spar,87064,H. Macanovica 29,TJEST.S-BUDGET SPAGHETTI 1 kg,S-BUDGET,"1,0000",kg,1.69,,1.69,1.69,12.0,350,71.0,9100000715643
+3,tjestenina,ugljikohidrati,spar,87064,H. Macanovica 29,TJES.BARILLA SPAGHETTI 500 g,Barilla,"0,5000",kg,0.94,,0.94,1.88,12.0,350,63.8,8076800195057
+1,kruh,ugljikohidrati,konzum,0602,Ozaljska 148,KRUH POLUBIJELI 700g MLINAR,MLINAR,0.70 kg,ko,1.04,,1.04,1.49,8.0,250,53.7,3858881122611
+2,kruh,ugljikohidrati,konzum,0602,Ozaljska 148,KRUH POLUBIJELI 700g KLARA,KLARA,0.70 kg,ko,1.04,,1.04,1.49,8.0,250,53.7,3858881320291
+3,kruh,ugljikohidrati,konzum,0602,Ozaljska 148,KRUH RAŽENA RUSTIKA 500g KLARA,KLARA,0.50 kg,ko,0.85,,0.85,1.7,8.0,250,47.1,3856016904651
+1,kruh,ugljikohidrati,lidl,210,Zadarska Ulica 79,BO Polubijeli domaći kruh,,0.4,400g,0.59,,0.59,1.48,8.0,250,54.1,4053216392731
+2,kruh,ugljikohidrati,lidl,210,Zadarska Ulica 79,BO Kruh bijeli,,0.5,500g,0.75,,0.75,1.5,8.0,250,53.3,3838700353143
+3,kruh,ugljikohidrati,lidl,210,Zadarska Ulica 79,"Polubijeli kruh, rezani",Tastino,0.7,700g,1.09,,1.09,1.56,8.0,250,51.3,4056489317623
+1,kruh,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,S.KRUH DOMACI POLUBIJELI 410G (771881 PDV5%),PIK RIJEKA - PEKARSTVO NETO NETO,"0,410 KG",KOM,0.59,,0.59,1.44,8.0,250,55.6,3850135238246
+2,kruh,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,S.KRUH DOMACI BIJELI 410 G (776823 PDV5%),PIK RIJEKA - PEKARSTVO NETO NETO,"0,410 KG",KOM,0.59,,0.59,1.44,8.0,250,55.6,3850135237935
+3,kruh,ugljikohidrati,plodine,045,Ulica Vice Vukova 2,KRUH DOMACI POLUBIJELI 400 G,PIK RIJEKA - PEKARSTVO NETO NETO,"0,400 KG",KOM,0.59,,0.59,1.48,8.0,250,54.1,plodine:771881
+1,kruh,ugljikohidrati,spar,87064,H. Macanovica 29,KRUH POLUBIJELI S-BUDGET 700 g,S-BUDGET,"0,7000",kg,1.09,,1.09,1.56,8.0,250,51.3,3856021228988
+2,kruh,ugljikohidrati,spar,87064,H. Macanovica 29,Kruh Kalnički 600 g,Vlastite potrebe,"0,6000",kg,1.02,,1.02,1.7,8.0,250,47.1,3858881121706
+3,kruh,ugljikohidrati,spar,87064,H. Macanovica 29,KRUH PŠE.BIJELI S-BUDGET 650 g,S-BUDGET,"0,6500",kg,1.24,,1.24,1.91,8.0,250,41.9,3856021228964
+1,brokula,povrće,konzum,0602,Ozaljska 148,BROKULA KOM,,0.50 kg,ko,1.49,,1.49,2.98,3.0,35,10.1,3850334385963
+1,brokula,povrće,lidl,210,Zadarska Ulica 79,Brokula 500g,,0.5,500g,1.19,,1.19,2.38,3.0,35,12.6,3858893060024
+2,brokula,povrće,lidl,210,Zadarska Ulica 79,Tjestenina s brokulom,Italiamo,0.5,500g,2.99,,2.99,5.98,3.0,35,5.0,20634377
+3,brokula,povrće,lidl,210,Zadarska Ulica 79,Bio brokula 300g,,0.3,300g,1.99,,1.99,6.63,3.0,35,4.5,20229245
+1,brokula,povrće,plodine,045,Ulica Vice Vukova 2,GRATIN BROKULA PLODINE,PLODINE GASTRO,,KOM,0.99,,0.99,0.99,3.0,35,30.3,plodine:606288
+2,brokula,povrće,plodine,045,Ulica Vice Vukova 2,BROKULA KOM,,"0,500 KG",KOM,1.59,,1.59,3.18,3.0,35,9.4,3613076000095
+3,brokula,povrće,plodine,045,Ulica Vice Vukova 2,CVJETACA BROKULA 500 G,,,KOM,1.79,,1.79,3.58,3.0,35,8.4,3859893818448
+1,brokula,povrće,spar,87064,H. Macanovica 29,Brokula rfs,,"1,0000",kg,3.99,,3.99,3.99,3.0,35,7.5,842
+2,brokula,povrće,spar,87064,H. Macanovica 29,BIO KLICE BROKULE 70 g,,"0,0700",kg,2.19,,2.19,31.29,3.0,35,1.0,3857500059468
+1,špinat,povrće,konzum,0602,Ozaljska 148,ŠPINAT GARDEN GOOD 450 g,GARDEN GOOD,0.45 kg,ko,1.25,,1.25,2.78,3.0,23,10.8,3838900844182
+2,špinat,povrće,konzum,0602,Ozaljska 148,ŠPINAT 400 grama,KORA,0.40 kg,ko,1.49,1.49,1.49,3.73,3.0,23,8.0,3856028676799
+3,špinat,povrće,konzum,0602,Ozaljska 148,ŠPINAT 400g LEDO,LEDO,0.40 kg,ko,1.69,1.69,1.69,4.23,3.0,23,7.1,3850116053257
+1,špinat,povrće,lidl,210,Zadarska Ulica 79,Špinat,Freshona,0.45,450g,1.15,,1.15,2.56,3.0,23,11.7,20536343
+2,špinat,povrće,lidl,210,Zadarska Ulica 79,Široki rezanci sa špinatom,Okusi zavičaja,0.4,400g,1.49,,1.49,3.73,3.0,23,8.0,4056489925729
+3,špinat,povrće,lidl,210,Zadarska Ulica 79,Špinat 500g,,0.5,500g,1.99,,1.99,3.98,3.0,23,7.5,20239060
+1,špinat,povrće,plodine,045,Ulica Vice Vukova 2,SPINAT 400 G HORTEX,HORTEX,"0,400 KG",KOM,0.93,,0.93,2.33,3.0,23,12.9,5900477000174
+2,špinat,povrće,plodine,045,Ulica Vice Vukova 2,SPINAT BRIKETI 400 G FRIZO,FRIZO,"0,400 KG",KOM,1.15,1.15,1.15,2.88,3.0,23,10.4,3856025806878
+3,špinat,povrće,plodine,045,Ulica Vice Vukova 2,USKI REZANCI SA SPINATOM 500 G MULINI PLODINE,MULINI,"0,500 KG",KOM,1.49,1.49,1.49,2.98,3.0,23,10.1,3856025852684
+1,špinat,povrće,spar,87064,H. Macanovica 29,ŠPINAT S-BUDGET 400 g,S-BUDGET,"0,4000",kg,1.09,,1.09,2.73,3.0,23,11.0,3856021204746
+2,špinat,povrće,spar,87064,H. Macanovica 29,ŠPINAT KREM SPAR 600 g,SPAR,"0,6000",kg,1.99,,1.99,3.32,3.0,23,9.0,9100000066127
+3,špinat,povrće,spar,87064,H. Macanovica 29,ŠPINAT 400 g,,"0,4000",kg,1.99,,1.99,4.97,3.0,23,6.0,3858893250494
+1,kupus,povrće,konzum,0602,Ozaljska 148,KUPUS SVJEŽI,,1.00 kg,kg,0.79,,0.79,0.79,1.5,25,19.0,3850334173119
+2,kupus,povrće,konzum,0602,Ozaljska 148,KUPUS CRVENI,,1.00 kg,kg,0.89,,0.89,0.89,1.5,25,16.9,3850334173348
+3,kupus,povrće,konzum,0602,Ozaljska 148,KUPUS SVJEŽI MLADI,,1.00 kg,kg,1.09,,1.09,1.09,1.5,25,13.8,3850334173393
+1,kupus,povrće,lidl,210,Zadarska Ulica 79,Kupus crveni,,1,1kg,0.79,,0.79,0.79,1.5,25,19.0,lidl:0082945
+2,kupus,povrće,lidl,210,Zadarska Ulica 79,Kupus bijeli,,1,1kg,0.79,,0.79,0.79,1.5,25,19.0,lidl:0082955
+3,kupus,povrće,lidl,210,Zadarska Ulica 79,Mladi kupus,,1,1kg,1.49,,1.49,1.49,1.5,25,10.1,lidl:0082913
+1,kupus,povrće,plodine,045,Ulica Vice Vukova 2,KUPUS ZELENI,,,KG,0.79,,0.79,0.79,1.5,25,19.0,53112131
+2,kupus,povrće,plodine,045,Ulica Vice Vukova 2,KUPUS CRVENI,,,KG,0.79,,0.79,0.79,1.5,25,19.0,53112132
+3,kupus,povrće,plodine,045,Ulica Vice Vukova 2,KUPUS KIS.1/2 EKOS GREEN,,,KOM,1.19,,1.19,1.19,1.5,25,12.6,3859891093304
+1,kupus,povrće,spar,87064,H. Macanovica 29,KUPUS ZA KISELJENJE 15/1,,"15,0000",kg,8.85,,8.85,0.59,1.5,25,25.4,3859893818097
+2,kupus,povrće,spar,87064,H. Macanovica 29,Kupus bijeli rfs,S-BUDGET,"1,0000",kg,0.69,,0.69,0.69,1.5,25,21.7,3858885876169
+3,kupus,povrće,spar,87064,H. Macanovica 29,Kupus crveni rfs,,"1,0000",kg,0.99,,0.99,0.99,1.5,25,15.2,3858885876718
+1,mrkva,povrće,konzum,0602,Ozaljska 148,MRKVA,,1.00 kg,kg,0.85,,0.85,0.85,1.0,40,11.8,3850334173126
+2,mrkva,povrće,konzum,0602,Ozaljska 148,MRKVA 1/1 PAK,,1.00 kg,ko,1.29,,1.29,1.29,1.0,40,7.8,3850334021243
+3,mrkva,povrće,konzum,0602,Ozaljska 148,MRKVA ŽUTA 500 g,ENNA FRUIT,0.50 kg,ko,1.09,,1.09,2.18,1.0,40,4.6,3856028689522
+1,mrkva,povrće,lidl,210,Zadarska Ulica 79,Mrkva rinfuza,,1,1kg,0.49,,0.49,0.49,1.0,40,20.4,lidl:0082755
+2,mrkva,povrće,lidl,210,Zadarska Ulica 79,"TOCO napitak naranča, mrkva, nekt.",,1.53,"1,5l",1.45,,1.45,0.97,1.0,40,10.3,3858890878790
+3,mrkva,povrće,lidl,210,Zadarska Ulica 79,Mrkva 1kg,,1,1kg,1.29,,1.29,1.29,1.0,40,7.8,8711121000016
+1,mrkva,povrće,plodine,045,Ulica Vice Vukova 2,MRKVA PAKIRANA 2 KG,,2 KG,KOM,1.6,,1.6,0.8,1.0,40,12.5,8032732449378
+2,mrkva,povrće,plodine,045,Ulica Vice Vukova 2,MRKVA RINFUZO,,,KG,0.89,,0.89,0.89,1.0,40,11.2,plodine:111801
+3,mrkva,povrće,plodine,045,Ulica Vice Vukova 2,MRKVA PAKIRANA 1 KG,,1 KG,KOM,1.29,,1.29,1.29,1.0,40,7.8,3859891082858
+1,mrkva,povrće,spar,87064,H. Macanovica 29,Mrkva rfs,S-BUDGET,"1,0000",kg,0.89,,0.89,0.89,1.0,40,11.2,3858885876923
+2,mrkva,povrće,spar,87064,H. Macanovica 29,MRKVA S BUDGET 1 kg,S-BUDGET,"1,0000",kg,1.39,,1.39,1.39,1.0,40,7.2,3858889117916
+3,mrkva,povrće,spar,87064,H. Macanovica 29,MRKVA VH 500 g,SPAR Vrtovi Hrvatske,"0,5000",kg,0.89,,0.89,1.78,1.0,40,5.6,3856021206849
+1,luk,povrće,konzum,0602,Ozaljska 148,LUK CRVENI,,1.00 kg,kg,0.79,,0.79,0.79,1.0,40,12.7,3850334386182
+2,luk,povrće,konzum,0602,Ozaljska 148,LUK ŽUTI 1 kg,KORA,1.00 kg,ko,1.09,,1.09,1.09,1.0,40,9.2,3850334049667
+3,luk,povrće,konzum,0602,Ozaljska 148,LUK LJUBIČASTI,,1.00 kg,kg,1.09,,1.09,1.09,1.0,40,9.2,3850334173034
+1,luk,povrće,lidl,210,Zadarska Ulica 79,Luk crveni 5kg,,5,5kg,1.95,,1.95,0.39,1.0,40,25.6,20306366
+2,luk,povrće,lidl,210,Zadarska Ulica 79,Luk crveni 2kg,,2,2kg,1.54,,1.54,0.77,1.0,40,13.0,20242305
+3,luk,povrće,lidl,210,Zadarska Ulica 79,Luk crveni rinfuza,,1,1kg,0.79,,0.79,0.79,1.0,40,12.7,lidl:0083325
+1,luk,povrće,plodine,045,Ulica Vice Vukova 2,LUK ZUTI 5 KG,,,KOM,1.79,1.79,1.79,0.36,1.0,40,27.8,3858893060413
+2,luk,povrće,plodine,045,Ulica Vice Vukova 2,LUK ZUTI,,,KG,0.79,,0.79,0.79,1.0,40,12.7,3856022674227
+3,luk,povrće,plodine,045,Ulica Vice Vukova 2,LUK ZUTI 1 KG,,1 KG,KOM,0.89,,0.89,0.89,1.0,40,11.2,3857500111555
+1,luk,povrće,spar,87064,H. Macanovica 29,LUK LJUBIČAST RUKAVAC VH 4/1,SPAR Vrtovi Hrvatske,"4,0000",KOM,1.29,,1.29,0.32,1.0,40,31.2,3856021225468
+2,luk,povrće,spar,87064,H. Macanovica 29,Luk žuti rfs,Vlastite potrebe,"1,0000",kg,0.84,,0.84,0.84,1.0,40,11.9,3858885871041
+3,luk,povrće,spar,87064,H. Macanovica 29,LUK ŽUTI VH 1 kg,SPAR Vrtovi Hrvatske,"1,0000",kg,0.99,,0.99,0.99,1.0,40,10.1,3856021227240
+1,češnjak,povrće,konzum,0602,Ozaljska 148,ČEŠNJAK RFZ,KORA,1.00 kg,kg,3.99,,3.99,3.99,6.0,150,15.0,3850334173287
+2,češnjak,povrće,konzum,0602,Ozaljska 148,ČEŠNJAK 250g,,0.25 kg,ko,1.29,,1.29,5.16,6.0,150,11.6,3856028688693
+3,češnjak,povrće,konzum,0602,Ozaljska 148,RAJČICA SJECK ČEŠNJAK 400g MUTTI,MUTTI,0.40 kg,ko,2.25,,2.25,5.63,6.0,150,10.7,8005110170461
+1,češnjak,povrće,lidl,210,Zadarska Ulica 79,BO Baguette s češnjakom,,0.175,165g,0.55,,0.55,3.33,6.0,150,18.0,20441838
+2,češnjak,povrće,lidl,210,Zadarska Ulica 79,Češnjak,,0.25,250g,1.39,,1.39,5.56,6.0,150,10.8,20253462
+3,češnjak,povrće,lidl,210,Zadarska Ulica 79,Dimljena kobasica s češnjakom,Spécialités françaises,0.3,300g,1.99,,1.99,6.63,6.0,150,9.0,20711269
+1,češnjak,povrće,plodine,045,Ulica Vice Vukova 2,BIO CESNJAK EKOZONA,PLODINE,,KOM,1.69,,1.69,1.69,6.0,150,35.5,3858890139280
+2,češnjak,povrće,plodine,045,Ulica Vice Vukova 2,CESNJAK RINFUZO,,,KG,3.49,,3.49,3.49,6.0,150,17.2,plodine:110801
+3,češnjak,povrće,plodine,045,Ulica Vice Vukova 2,AFROD.SAMP.1 L CESNJAK,AFRODITA,1 L,KOM,3.49,,3.49,3.49,6.0,150,17.2,3830001295757
+1,češnjak,povrće,spar,87064,H. Macanovica 29,Češnjak VH rfs,SPAR Vrtovi Hrvatske,"1,0000",kg,5.49,,5.49,5.49,6.0,150,10.9,3858893252634
+2,češnjak,povrće,spar,87064,H. Macanovica 29,ČEŠNJAK 250 g,,"0,2500",kg,1.49,,1.49,5.96,6.0,150,10.1,6930548976243
+3,češnjak,povrće,spar,87064,H. Macanovica 29,ČEŠNJAK VH 200 g,SPAR Vrtovi Hrvatske,"0,2000",kg,1.69,,1.69,8.45,6.0,150,7.1,3856021208997
+1,rajčica,povrće,konzum,0602,Ozaljska 148,RAJČICA PASIR GARDEN GOOD 700 g ST,GARDEN GOOD,0.70 kg,ko,1.75,,1.75,2.5,1.0,18,4.0,3850334446794
+2,rajčica,povrće,konzum,0602,Ozaljska 148,RAJČICA SJECKANA GARDEN GOOD 400 g,GARDEN GOOD,0.40 kg,ko,1.05,,1.05,2.63,1.0,18,3.8,3838900843161
+3,rajčica,povrće,konzum,0602,Ozaljska 148,RAJČICA GRAPOLO,,1.00 kg,kg,2.89,,2.89,2.89,1.0,18,3.5,3850334173416
+1,rajčica,povrće,lidl,210,Zadarska Ulica 79,Tal. rajčica oguljena i nasjeckana,Baresa,0.4,425ml,0.79,,0.79,1.98,1.0,18,5.1,20004132
+2,rajčica,povrće,lidl,210,Zadarska Ulica 79,Rajčica,,1,1kg,1.99,,1.99,1.99,1.0,18,5.0,lidl:0082416
+3,rajčica,povrće,lidl,210,Zadarska Ulica 79,Bio pasirane rajčice s bosiljkom,Baresa,0.7,720ml,1.69,,1.69,2.41,1.0,18,4.1,4056489745488
+1,rajčica,povrće,plodine,045,Ulica Vice Vukova 2,RAJCICA SLJIVAR,,,KG,1.99,,1.99,1.99,1.0,18,5.0,2011290800001
+2,rajčica,povrće,plodine,045,Ulica Vice Vukova 2,RAJCICA SJECKANA 400 G CAMPO,CAMPO,"0,400 KG",KOM,0.89,0.89,0.89,2.23,1.0,18,4.5,3856025848663
+3,rajčica,povrće,plodine,045,Ulica Vice Vukova 2,RAJCICA BEEF,,,KG,2.49,,2.49,2.49,1.0,18,4.0,plodine:112800
+1,rajčica,povrće,spar,87064,H. Macanovica 29,RAJČICA POLPA S-BUDGET 400 g,S-BUDGET,"0,4000",kg,0.69,,0.69,1.72,1.0,18,5.8,9100000996158
+2,rajčica,povrće,spar,87064,H. Macanovica 29,Rajčica grapolo rfs,S-BUDGET,"1,0000",kg,1.79,1.79,1.79,1.79,1.0,18,5.6,3858893251705
+3,rajčica,povrće,spar,87064,H. Macanovica 29,Rajčica rfs,,"1,0000",kg,1.99,,1.99,1.99,1.0,18,5.0,3858885877289
+1,paprika,povrće,konzum,0602,Ozaljska 148,PAPRIKA ROG CRVENA,,1.00 kg,kg,2.29,,2.29,2.29,1.0,30,4.4,3850334386267
+2,paprika,povrće,konzum,0602,Ozaljska 148,PAPRIKA BABURA,,1.00 kg,kg,2.29,,2.29,2.29,1.0,30,4.4,3858885876060
+3,paprika,povrće,konzum,0602,Ozaljska 148,PAPRIKA ZELENA,,1.00 kg,kg,3.99,,3.99,3.99,1.0,30,2.5,3850334173164
+1,paprika,povrće,lidl,210,Zadarska Ulica 79,"Slatka paprika, dimljena",Kania,0.025,25g,0.45,,0.45,0.45,1.0,30,22.2,4056489810094
+2,paprika,povrće,lidl,210,Zadarska Ulica 79,Paprika babura,,1,1kg,1.99,,1.99,1.99,1.0,30,5.0,lidl:0082580
+3,paprika,povrće,lidl,210,Zadarska Ulica 79,Paprika rog crvena,,1,1kg,2.29,,2.29,2.29,1.0,30,4.4,lidl:0082630
+1,paprika,povrće,plodine,045,Ulica Vice Vukova 2,PAPRIKA BABURA,,,KG,1.99,,1.99,1.99,1.0,30,5.0,plodine:112712
+2,paprika,povrće,plodine,045,Ulica Vice Vukova 2,PAPRIKA ZA KISLJENJE,,,KG,1.99,,1.99,1.99,1.0,30,5.0,plodine:112722
+3,paprika,povrće,plodine,045,Ulica Vice Vukova 2,PAPRIKA ROGA CRVENA,,,KG,2.29,,2.29,2.29,1.0,30,4.4,8057960790092
+1,paprika,povrće,spar,87064,H. Macanovica 29,Paprika crvena rog rfs,,"1,0000",kg,2.49,,2.49,2.49,1.0,30,4.0,3858885877005
+2,paprika,povrće,spar,87064,H. Macanovica 29,Paprika babura rfs,,"1,0000",kg,2.59,,2.59,2.59,1.0,30,3.9,3858885876060
+3,paprika,povrće,spar,87064,H. Macanovica 29,Paprika crvena rfs,,"1,0000",kg,2.99,,2.99,2.99,1.0,30,3.3,3858885877050
+1,tikvica,povrće,konzum,0602,Ozaljska 148,TIKVICE,,1.00 kg,kg,1.69,,1.69,1.69,1.0,20,5.9,3850334173195
+1,tikvica,povrće,lidl,210,Zadarska Ulica 79,Tikvica,,1,1kg,1.69,,1.69,1.69,1.0,20,5.9,lidl:0082345
+2,tikvica,povrće,lidl,210,Zadarska Ulica 79,Bio tikvica 500g,,0.5,500g,1.89,,1.89,3.78,1.0,20,2.6,20240066
+1,tikvica,povrće,plodine,045,Ulica Vice Vukova 2,TIKVICA ZELENA,,,KG,1.49,,1.49,1.49,1.0,20,6.7,8057960790139
+2,tikvica,povrće,plodine,045,Ulica Vice Vukova 2,NOZ ZA LJUSTENJE TIKVICA,FACKELMANN,,KOM,2.79,,2.79,2.79,1.0,20,3.6,4008033420419
+3,tikvica,povrće,plodine,045,Ulica Vice Vukova 2,BIO TIKVICA 500G.,,,KOM,1.79,,1.79,3.58,1.0,20,2.8,8437007908084
+1,tikvica,povrće,spar,87064,H. Macanovica 29,Tikvice rfs,,"1,0000",kg,1.79,,1.79,1.79,1.0,20,5.6,3858893251774
+2,tikvica,povrće,spar,87064,H. Macanovica 29,BIO TIKVICE NATUR PUR 500 g,SPAR Natur*pur,"0,5000",kg,2.29,,2.29,4.58,1.0,20,2.2,8435320673221
+1,krastavac,povrće,konzum,0602,Ozaljska 148,KRASTAVAC,,1.00 kg,kg,1.89,,1.89,1.89,1.0,15,5.3,3850334173409
+2,krastavac,povrće,konzum,0602,Ozaljska 148,KRASTAVAC SALATNI KOM,,0.30 kg,ko,0.99,,0.99,3.3,1.0,15,3.0,3859892765255
+3,krastavac,povrće,konzum,0602,Ozaljska 148,KRASTAVAC K PLUS II KL 330g,K PLUS,0.33 kg,ko,1.45,,1.45,4.39,1.0,15,2.3,3850334117977
+1,krastavac,povrće,lidl,210,Zadarska Ulica 79,Bio krastavac,,0.37,1komad,1.29,,1.29,1.29,1.0,15,7.8,20239756
+2,krastavac,povrće,lidl,210,Zadarska Ulica 79,Krastavac,,1,1kg,1.79,,1.79,1.79,1.0,15,5.6,lidl:0082225
+3,krastavac,povrće,lidl,210,Zadarska Ulica 79,Krastavac 750g,,0.75,750g,1.79,1.79,1.79,2.39,1.0,15,4.2,4056489008644
+1,krastavac,povrće,plodine,045,Ulica Vice Vukova 2,KRASTAVAC SALATNI,,1 KG,KOM,0.89,,0.89,0.89,1.0,15,11.2,4052963150014
+2,krastavac,povrće,plodine,045,Ulica Vice Vukova 2,BIO KRASTAVAC SALATNI,,,KOM,1.29,,1.29,1.29,1.0,15,7.8,843657064165
+3,krastavac,povrće,plodine,045,Ulica Vice Vukova 2,KRASTAVAC,,,KG,1.69,,1.69,1.69,1.0,15,5.9,plodine:113101
+1,krastavac,povrće,spar,87064,H. Macanovica 29,Krastavac rfs,,"1,0000",kg,1.79,,1.79,1.79,1.0,15,5.6,3858885876077
+2,krastavac,povrće,spar,87064,H. Macanovica 29,KRASTAVCI S-BUDGET 6-9 670 g,S-BUDGET,"0,3300",kg,1.39,,1.39,4.21,1.0,15,2.4,3858889112263
+3,krastavac,povrće,spar,87064,H. Macanovica 29,"KRASTAVCI REZANI 2,45 kg",,"2,4500",kg,12.99,,12.99,5.3,1.0,15,1.9,4008100140332
+1,salata zelena,povrće,konzum,0602,Ozaljska 148,MATOVILAC 125 grama,KONZUM,0.13 kg,ko,1.29,,1.29,10.32,1.0,15,1.0,3858885875964
+2,salata zelena,povrće,konzum,0602,Ozaljska 148,MATOVILAC 100 grama,MINUTE,0.10 kg,ko,1.29,,1.29,12.9,1.0,15,0.8,3858885875933
+3,salata zelena,povrće,konzum,0602,Ozaljska 148,MATOVILAC RADIČ 125 grama,MINUTE,0.13 kg,ko,1.69,,1.69,13.52,1.0,15,0.7,3856028676751
+1,salata zelena,povrće,lidl,210,Zadarska Ulica 79,Miješana salata (OM 360g),Okusi zavičaja,0.72,720ml,1.59,,1.59,4.42,1.0,15,2.3,4056489316459
+2,salata zelena,povrće,lidl,210,Zadarska Ulica 79,Matovilac,,0.125,125g,1.29,,1.29,10.32,1.0,15,1.0,3858893060406
+3,salata zelena,povrće,lidl,210,Zadarska Ulica 79,Salata rukola,,0.125,125g,1.29,,1.29,10.32,1.0,15,1.0,3859893446283
+1,salata zelena,povrće,plodine,045,Ulica Vice Vukova 2,SALATA KRISTALKA -KOMAD,,"0,300 KG",KOM,0.89,,0.89,2.97,1.0,15,3.4,plodine:111305
+2,salata zelena,povrće,plodine,045,Ulica Vice Vukova 2,SALATA MIX 400 G,,"0,400 KG",KOM,1.59,,1.59,3.98,1.0,15,2.5,8012566240006
+3,salata zelena,povrće,plodine,045,Ulica Vice Vukova 2,SALATA MIX 200 G,,"0,200 KG",KOM,1.19,,1.19,5.95,1.0,15,1.7,8012566404149
+1,salata zelena,povrće,spar,87064,H. Macanovica 29,Miješana salata rezana,SPAR enjoy,"1,0000",kg,3.79,,3.79,3.79,1.0,15,2.6,spar:186544
+2,salata zelena,povrće,spar,87064,H. Macanovica 29,MIJEŠANA SALATA S-BUDGET 670 g,S-BUDGET,"0,3600",kg,1.59,,1.59,4.42,1.0,15,2.3,3858889112287
+3,salata zelena,povrće,spar,87064,H. Macanovica 29,Salata vrtni mix,SPAR enjoy,"1,0000",kg,6.99,,6.99,6.99,1.0,15,1.4,spar:356887
+1,banana,voće,konzum,0602,Ozaljska 148,BANANA SNIŽENJE,,1.00 kg,kg,1.19,,1.19,1.19,1.0,90,8.4,konzum:01411643
+2,banana,voće,konzum,0602,Ozaljska 148,BANANA,,1.00 kg,kg,1.49,,1.49,1.49,1.0,90,6.7,3850334173539
+3,banana,voće,konzum,0602,Ozaljska 148,BANANA BIO,BONITA,1.00 kg,kg,1.99,,1.99,1.99,1.0,90,5.0,konzum:90720080
+1,banana,voće,lidl,210,Zadarska Ulica 79,Banana,,1,1kg,1.44,,1.44,1.44,1.0,90,6.9,4304493274099
+2,banana,voće,lidl,210,Zadarska Ulica 79,Bio banana,,1,1kg,1.49,1.49,1.49,1.49,1.0,90,6.7,4335619068865
+3,banana,voće,lidl,210,Zadarska Ulica 79,Mullermilch Zero banana,,0.4,400g,1.19,,1.19,2.98,1.0,90,3.4,4025500276447
+1,banana,voće,plodine,045,Ulica Vice Vukova 2,BANANA SORTA CAVENDISH,,,KG,1.44,,1.44,1.44,1.0,90,6.9,plodine:100101
+2,banana,voće,plodine,045,Ulica Vice Vukova 2,BIO BANANA SORTA CAVENDISH,,,KG,1.79,,1.79,1.79,1.0,90,5.6,plodine:100169
+3,banana,voće,plodine,045,Ulica Vice Vukova 2,RIZINA KASA COKOLADA BANANA 60 G BIOPLOD,DOBRA ZOBENA KASA,"0,600 KG",KOM,1.15,,1.15,1.92,1.0,90,5.2,8595054908225
+1,banana,voće,spar,87064,H. Macanovica 29,Banana,,"1,0000",kg,1.49,,1.49,1.49,1.0,90,6.7,3858885879986
+2,banana,voće,spar,87064,H. Macanovica 29,Bio banana,SPAR Natur*pur,"1,0000",kg,1.99,,1.99,1.99,1.0,90,5.0,3830036310906
+3,banana,voće,spar,87064,H. Macanovica 29,SMOOTHIE VIŠ/BANANA SPAR 250 g,SPAR enjoy,"0,2500",kg,1.39,,1.39,5.56,1.0,90,1.8,9100000758459
+1,jabuka,voće,konzum,0602,Ozaljska 148,JABUKA 2 kg,,2.00 kg,ko,1.58,1.58,1.58,0.79,0.3,52,3.8,3856028689287
+2,jabuka,voće,konzum,0602,Ozaljska 148,JABUKA ZELENA 2 kg,,2.00 kg,ko,2.19,,2.19,1.1,0.3,52,2.7,3850334049087
+3,jabuka,voće,konzum,0602,Ozaljska 148,JABUKA ZLATNI DELIŠES,,1.00 kg,kg,1.69,,1.69,1.69,0.3,52,1.8,3850334173614
+1,jabuka,voće,lidl,210,Zadarska Ulica 79,Napitak od jabuke i višnje,,1,1l,1.09,,1.09,1.09,0.3,52,2.8,5900334000781
+2,jabuka,voće,lidl,210,Zadarska Ulica 79,Jabuka zelena 2kg,,2,2kg,2.19,,2.19,1.1,0.3,52,2.7,20241896
+3,jabuka,voće,lidl,210,Zadarska Ulica 79,Jabuka crvena 2kg,,2,2kg,2.19,,2.19,1.1,0.3,52,2.7,20241919
+1,jabuka,voće,plodine,045,Ulica Vice Vukova 2,JABUKA EL STAR 2KG,,2 KG,KOM,1.85,,1.85,0.93,0.3,52,3.2,3830068260231
+2,jabuka,voće,plodine,045,Ulica Vice Vukova 2,JABUKA IDARED 2 KG,,2 KG,KOM,1.99,,1.99,1.0,0.3,52,3.0,3859893211157
+3,jabuka,voće,plodine,045,Ulica Vice Vukova 2,JABUKA ZLATNI DELISES 2 KG,,2 KG,KOM,1.99,,1.99,1.0,0.3,52,3.0,3830068260200
+1,jabuka,voće,spar,87064,H. Macanovica 29,JABUKA CRVENA VH 2 kg,SPAR Vrtovi Hrvatske,"2,0000",kg,1.58,,1.58,0.79,0.3,52,3.8,3856021229022
+2,jabuka,voće,spar,87064,H. Macanovica 29,VINDI COCKT.NARANČA-JABUKA 2 L,,"2,0000",l,1.99,,1.99,0.99,0.3,52,3.0,3850108072808
+3,jabuka,voće,spar,87064,H. Macanovica 29,JABUKA ZELENA VH 2 kg,SPAR Vrtovi Hrvatske,"2,0000",kg,2.19,,2.19,1.09,0.3,52,2.8,3856021229046
+1,naranča / mandarina,voće,konzum,0602,Ozaljska 148,MANDARINA,KORA,1.00 kg,kg,0.99,0.99,0.99,0.99,1.0,47,10.1,3850334386229
+2,naranča / mandarina,voće,konzum,0602,Ozaljska 148,VODA FUNKC JANA VIT NARANČA 1.5L,JANA,1.50 l,ko,1.85,,1.85,1.23,1.0,47,8.1,3858890874044
+3,naranča / mandarina,voće,konzum,0602,Ozaljska 148,MANDARINA 2 kg,KORA,2.00 kg,ko,2.49,,2.49,1.25,1.0,47,8.0,3859892029326
+1,naranča / mandarina,voće,lidl,210,Zadarska Ulica 79,Voda s okusom naranče,Saguaro,1.5,"1,5l",0.99,,0.99,0.66,1.0,47,15.2,4335619059788
+2,naranča / mandarina,voće,lidl,210,Zadarska Ulica 79,Mandarina 2kg,,2,2kg,1.45,1.45,1.45,0.73,1.0,47,13.7,20387655
+3,naranča / mandarina,voće,lidl,210,Zadarska Ulica 79,TOCO Crvena naranča avokado,,1.53,"1,5l",1.45,,1.45,0.97,1.0,47,10.3,3858890878974
+1,naranča / mandarina,voće,plodine,045,Ulica Vice Vukova 2,PVC VAZA COUBI 12X11 CM OKRUGLA NARANCASTA,PROSPERPLAST,1 KOM,KOM,0.53,,0.53,0.53,1.0,47,18.9,5905197072432
+2,naranča / mandarina,voće,plodine,045,Ulica Vice Vukova 2,KEYROAD MARKER NARANCASTI,KEYROAD,1 KOM,KOM,0.56,,0.56,0.56,1.0,47,17.9,6941288725909
+3,naranča / mandarina,voće,plodine,045,Ulica Vice Vukova 2,UMJ.TULIPAN NARANCASTI 32 CM IC,IRA COMMERC -UMJ.CVIJ.REDOVNI ASOR.,1 KOM,KOM,0.77,,0.77,0.77,1.0,47,13.0,3856023037915
+1,naranča / mandarina,voće,spar,87064,H. Macanovica 29,MANDARINA VH 2 kg,SPAR Vrtovi Hrvatske,"2,0000",kg,1.44,1.44,1.44,0.72,1.0,47,13.9,3859892806019
+2,naranča / mandarina,voće,spar,87064,H. Macanovica 29,VINDI COCKT.NARANČA-JABUKA 2 L,,"2,0000",l,1.99,,1.99,0.99,1.0,47,10.1,3850108072808
+3,naranča / mandarina,voće,spar,87064,H. Macanovica 29,VINDI COCKT.NARANČA-MANDAR.2 L,,"2,0000",l,1.99,,1.99,0.99,1.0,47,10.1,3850108072815
+1,maslinovo ulje,masti,lidl,210,Zadarska Ulica 79,Ekstra djevičansko maslinovo ulje,,1.38,1l,4.89,,4.89,4.89,0,900,,8010445003551
+2,maslinovo ulje,masti,lidl,210,Zadarska Ulica 79,PEPE Ekstra djev. Maslinovo ulje,,0.914,1l,4.89,,4.89,4.89,0,900,,8437029007673
+3,maslinovo ulje,masti,lidl,210,Zadarska Ulica 79,Orgula Ekstra djevičansko mas. ulje,,0.916,1l,5.99,,5.99,5.99,0,900,,3859890446217
+1,maslinovo ulje,masti,plodine,045,Ulica Vice Vukova 2,EXTRA DJEVICANSKO MASLINOVO ULJE 1 L OLIVERI 1919,OLIVERI 1919,1 L,KOM,7.99,,7.99,7.99,0,900,,8052862100000
+2,maslinovo ulje,masti,plodine,045,Ulica Vice Vukova 2,MASLINOVO ULJE EXTRA DJEVICANSKO 1 L COSTA D'ORO,COSTA D ORO,1 L,KOM,8.99,,8.99,8.99,0,900,,8007270110158
+3,maslinovo ulje,masti,plodine,045,Ulica Vice Vukova 2,MASLINOVO ULJE EXTRA DJEVICANSKO 750 ML COPPINI,COPPINI,"0,750 L",KOM,6.99,,6.99,9.32,0,900,,8006724750209
+1,suncokretovo ulje,masti,lidl,210,Zadarska Ulica 79,Zvijezda Suncokretovo ulje,,3.68,4x1l,5.99,,5.99,1.5,0,900,,3856015312860
+2,suncokretovo ulje,masti,lidl,210,Zadarska Ulica 79,Zvijezda Suncokretovo ulje RETRO,,1.1,"1,2l",1.85,,1.85,1.54,0,900,,3856015320926
+1,suncokretovo ulje,masti,plodine,045,Ulica Vice Vukova 2,SARDINA MIRELA BILJNO ULJE 100 G LIM PODRAVKA,EVA BEZ PASTETA,"0,070 KG",KOM,1.39,,1.39,19.86,0,900,,3850104277412
+2,suncokretovo ulje,masti,plodine,045,Ulica Vice Vukova 2,SKUSA FILETI BILJNO ULJE 105 G ADRIATIC QUEEN SARDINA POSTIR,ADRIATIC QUEEN,"0,074 KG",KOM,2.09,,2.09,28.44,0,900,,3850160110067
+3,suncokretovo ulje,masti,plodine,045,Ulica Vice Vukova 2,EVA LOSOS FILET BILJNO ULJE 100 G PODRAVKA,EVA BEZ PASTETA,"0,100 KG",KOM,5.49,,5.49,54.9,0,900,,3856020271268
+1,suncokretovo ulje,masti,spar,87064,H. Macanovica 29,SRDELE SPAR BILJNO ULJE 105 g,SPAR,"0,1050",kg,1.09,,1.09,10.38,0,900,,3831115304106
+2,suncokretovo ulje,masti,spar,87064,H. Macanovica 29,TUNA SPAR BILJNO ULJE 160 g,SPAR,"0,1040",kg,2.29,,2.29,22.02,0,900,,3831115324623
+3,suncokretovo ulje,masti,spar,87064,H. Macanovica 29,TUNA SPAR BILJNO ULJE 3X80 g,SPAR,"0,1560",kg,3.79,,3.79,24.29,0,900,,3831115309019
+1,kikiriki maslac,masti,konzum,0602,Ozaljska 148,NAMAZ KIKIRIKI MASLAC 100% ACTIVE ZON P+ 500g,ACTIVE ZONE,0.50 kg,ko,5.19,,5.19,10.38,25.0,600,24.1,3838900827789
+1,kikiriki maslac,masti,lidl,210,Zadarska Ulica 79,XXL Maslac od kikirikija SK1,Maribel,1,1kg,4.49,,4.49,4.49,25.0,600,55.7,4335619010970
+2,kikiriki maslac,masti,lidl,210,Zadarska Ulica 79,XXL kikiriki maslac SK3,MCENNEDY,1,1kg,4.69,,4.69,4.69,25.0,600,53.3,4335619015302
+3,kikiriki maslac,masti,lidl,210,Zadarska Ulica 79,Maslac od kikirikija SK4,Maribel,0.454,454g,2.99,,2.99,6.59,25.0,600,37.9,4335619432291
+1,kikiriki maslac,masti,plodine,045,Ulica Vice Vukova 2,GRANOLA KIKIRIKI MASLAC 330 G FUN FIT,FUN FIT,"0,330 KG",KOM,2.69,,2.69,8.15,25.0,600,30.7,8606015857787
+2,kikiriki maslac,masti,plodine,045,Ulica Vice Vukova 2,KIKIRIKI MASLAC 100% GLATKI 1 KG NUTRIGOLD,NUTRIGOLD,1 KG,KOM,8.69,,8.69,8.69,25.0,600,28.8,3858891972749
+3,kikiriki maslac,masti,plodine,045,Ulica Vice Vukova 2,STAPICI KIKIRIKI MASLAC 120 G MR NUTZ,MR NUTZ,"0,120 KG",KOM,1.19,,1.19,9.92,25.0,600,25.2,8600462041836
+1,orašasti plodovi,masti,konzum,0602,Ozaljska 148,KIKIRIKI PRŽENI SLANI EC99 500 g,LAGRANA,0.50 kg,ko,2.05,,2.05,4.1,20.0,600,48.8,3872084000026
+2,orašasti plodovi,masti,konzum,0602,Ozaljska 148,KIKIRIKI HRUSTY PRŽENI SLANI 500 g,HRUSTY,0.50 kg,ko,2.39,,2.39,4.78,20.0,600,41.8,3850334415172
+3,orašasti plodovi,masti,konzum,0602,Ozaljska 148,DESERT MONTE LJEŠNJAK 4X100g ZOTT,MONTE,0.40 kg,ko,2.09,2.09,2.09,5.23,20.0,600,38.2,40145389
+1,orašasti plodovi,masti,lidl,210,Zadarska Ulica 79,Evropa Rahatlokum s orasima,,0.4,400g,1.79,,1.79,4.48,20.0,600,44.6,5310002585203
+2,orašasti plodovi,masti,lidl,210,Zadarska Ulica 79,BO Pecivo s orasima i medom,,0.09,85g,0.49,,0.49,5.76,20.0,600,34.7,4335619321793
+3,orašasti plodovi,masti,lidl,210,Zadarska Ulica 79,Lješnjak nougat krema 13%,Choco Nussa,0.4,400g,2.35,,2.35,5.88,20.0,600,34.0,20457105
+1,orašasti plodovi,masti,plodine,045,Ulica Vice Vukova 2,KIKIRIKI PECENI SLANI 1000 G YUMMY,YUMMY,1 KG,KOM,3.99,,3.99,3.99,20.0,600,50.1,3858893920755
+2,orašasti plodovi,masti,plodine,045,Ulica Vice Vukova 2,STRUCA JECAM S ORASIMA 400 G ZITO,PODRAVKA - ZITO PEKARSTVO,"0,400 KG",KOM,1.66,,1.66,4.15,20.0,600,48.2,plodine:852677
+3,orašasti plodovi,masti,plodine,045,Ulica Vice Vukova 2,KIKIRIKI PECENI U LJUSCI 400 G ALEGRO,ALEGRO SUHO PAKIRANO,"0,400 KG",KOM,1.99,1.99,1.99,4.98,20.0,600,40.2,3856025837476
+1,orašasti plodovi,masti,spar,87064,H. Macanovica 29,KIKIRIKI S BUDGET 500 g,S-BUDGET,"0,5000",kg,2.29,,2.29,4.58,20.0,600,43.7,8057204091961
+2,orašasti plodovi,masti,spar,87064,H. Macanovica 29,ROLADA S-BUDGET LJEŠNJAK 305 g,S-BUDGET,"0,3050",kg,1.48,,1.48,4.85,20.0,600,41.2,3856021205323
+3,orašasti plodovi,masti,spar,87064,H. Macanovica 29,ŠTAPIĆI SPAR KIKIRIKI 150 g,SPAR,"0,1500",kg,0.85,,0.85,5.67,20.0,600,35.3,3856021203930
+1,sol / začini,ostalo,konzum,0602,Ozaljska 148,SOL KAMENA KUT 1 kg K PLUS,K PLUS,1.00 kg,ko,0.55,,0.55,0.55,0,0,,3850334058928
+2,sol / začini,ostalo,konzum,0602,Ozaljska 148,SOL ZA PERILICU DAX 1.1kg,DAX,1.10 kg,ko,0.79,,0.79,0.72,0,0,,3850334399977
+3,sol / začini,ostalo,konzum,0602,Ozaljska 148,SOL KAMENA 1kg TUZLA,TUZLA,1.00 kg,ko,0.83,,0.83,0.83,0,0,,3870009000014
+1,sol / začini,ostalo,lidl,210,Zadarska Ulica 79,Pag91 Kuhinjska morska sol sitna,,1,1kg,0.49,,0.49,0.49,0,0,,3859888817340
+2,sol / začini,ostalo,lidl,210,Zadarska Ulica 79,Pag 91 Morska sol krupna,,1,1kg,0.49,,0.49,0.49,0,0,,3859888817036
+3,sol / začini,ostalo,lidl,210,Zadarska Ulica 79,Origano usitnjeni,Kania,0.012,12g,0.99,,0.99,0.99,0,0,,4056489762218
+1,sol / začini,ostalo,plodine,045,Ulica Vice Vukova 2,SOL SITNA 10 KG TUZLA,TUZLA SOL,10 KG,KOM,3.71,,3.71,0.37,0,0,,3870009000045
+2,sol / začini,ostalo,plodine,045,Ulica Vice Vukova 2,SOL MORSKA KRUPNA 5 KG PAG 91,PAG 91,5 KG,KOM,2.39,,2.39,0.48,0,0,,3859888817159
+3,sol / začini,ostalo,plodine,045,Ulica Vice Vukova 2,SOL SITNA 5 KG PAG 91,PAG 91,5 KG,KOM,2.39,,2.39,0.48,0,0,,3859888817135
+1,sol / začini,ostalo,spar,87064,H. Macanovica 29,SOL S-BUDGET KRUP.MORSKA 1 kg,S-BUDGET,"1,0000",kg,0.55,,0.55,0.55,0,0,,3858889116643
+2,sol / začini,ostalo,spar,87064,H. Macanovica 29,SOL S-BUDGET SITNA MORSKA 1 kg,S-BUDGET,"1,0000",kg,0.55,,0.55,0.55,0,0,,3858889116636
+3,sol / začini,ostalo,spar,87064,H. Macanovica 29,SOL KUHINJ.KRUPNA MORSKA 5 kg,Odisej,"5,0000",kg,2.99,,2.99,0.6,0,0,,3859888817159
+1,zamrznuto povrće mix,povrće,lidl,210,Zadarska Ulica 79,Povrće za Minestrone juhu,Italiamo,1,1kg,2.19,,2.19,2.19,3.0,40,13.7,20137441
+2,zamrznuto povrće mix,povrće,lidl,210,Zadarska Ulica 79,Smrznuto povrće za tavu SK1,Freshona,1,1kg,2.39,,2.39,2.39,3.0,40,12.6,4056489658634
+3,zamrznuto povrće mix,povrće,lidl,210,Zadarska Ulica 79,Povrće za juhu 650g,,0.65,650g,1.69,,1.69,2.6,3.0,40,11.5,20447939
+1,zamrznuto povrće mix,povrće,spar,87064,H. Macanovica 29,POVRĆE ZA JUHU S BUDGET 500 g,S-BUDGET,"0,5000",kg,1.29,,1.29,2.58,3.0,40,11.6,3858889117893
+2,zamrznuto povrće mix,povrće,spar,87064,H. Macanovica 29,POVRĆE ZA JUHU SPAR 600 g,SPAR,"0,6000",kg,1.69,,1.69,2.82,3.0,40,10.6,3856021232206
+3,zamrznuto povrće mix,povrće,spar,87064,H. Macanovica 29,BIO POVRĆE ZA JUHU NP 500 g,SPAR Natur*pur,"0,5000",kg,2.59,,2.59,5.18,3.0,40,5.8,3831115307039

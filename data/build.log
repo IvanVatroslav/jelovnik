@@ -1,0 +1,21 @@
+Using 5 stores:
+        km  konzum    0602    Ozaljska 148
+        km  kaufland  5930    Jablanska ulica br. 80
+        km  spar      87064   H. Macanovica 29
+        km  plodine   045     Ulica Vice Vukova 2
+        km  lidl      210     Zadarska Ulica 79
+Downloading archive 2026-10-25 (119 MB) ...
+{
+  "archive_date": "2026-10-25",
+  "generated": "2026-10-25",
+  "stores": 5,
+  "rows": 73567,
+  "rows_by_chain": {
+    "konzum": 5375,
+    "lidl": 14105,
+    "spar": 5323,
+    "plodine": 48764
+  },
+  "staples_matched": 48,
+  "staples_total": 48
+}

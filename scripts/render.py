@@ -101,6 +101,22 @@ def fmt_date(iso):
     return f"{int(d)}.{int(m)}."
 
 
+def day_time(d, recipes):
+    """Minutes of kitchen time this day: 0 for leftovers/own dish, else the recipes' time_min."""
+    mins = 0
+    for key, flag in (("dinner_recipe", d.get("leftover")), ("lunch_recipe", d.get("lunch_leftover"))):
+        r = recipes.get(d.get(key))
+        if r and not flag:
+            mins += int(r.get("time_min") or 0)
+    return mins
+
+
+def time_label(mins):
+    if not mins:
+        return "samo podgrij"
+    return f"{mins} min kuhanja"
+
+
 def render(plan):
     recipes = {r["id"]: r for r in plan.get("recipes", [])}
     stores = plan.get("stores", [])
@@ -207,7 +223,7 @@ a{{color:var(--acc)}}
                    f'<div class="b"><div class="d">{e(label)} {fmt_date(d["date"])}</div>'
                    f'<div class="l">{lunch_html}</div>'
                    f'<div class="n"><a href="{href}" style="color:inherit;text-decoration:none">{e(d.get("dinner",""))}</a> {pills}</div>'
-                   f'<div class="m"><span class="pill">{e(d.get("protein_g","?"))} g prot</span><span class="sub">{e(d.get("kcal",""))} kcal</span></div>'
+                   f'<div class="m"><span class="pill">{e(d.get("protein_g","?"))} g prot</span><span class="sub">{e(d.get("kcal",""))} kcal</span><span class="sub">⏱ {time_label(day_time(d, recipes))}</span></div>'
                    f'</div></div>')
     out.append("</div>")
 
@@ -384,7 +400,8 @@ def render_email(plan):
                      f'<div style="{MUTE}font-size:13px">Ručak · {lunch}</div>'
                      f'<div><span style="{MUTE}">Večera · </span>{dinner}{left}</div>'
                      f'<div style="margin-top:6px;font-size:12px"><span style="background:#e8f3f0;color:#1f6f5f;border-radius:999px;padding:1px 7px;font-weight:600">{e(d.get("protein_g","?"))} g prot</span>'
-                     f' <span style="{MUTE}">{e(d.get("kcal",""))} kcal</span></div></div></div></td>')
+                     f' <span style="{MUTE}">{e(d.get("kcal",""))} kcal</span>'
+                     f'<br><span style="{MUTE}">⏱ {time_label(day_time(d, recipes))}</span></div></div></div></td>')
         o.append("</tr>")
     o.append("</table>")
 

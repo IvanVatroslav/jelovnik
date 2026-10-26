@@ -1,8 +1,9 @@
 {
   "store_codes": [
+    "konzum:1260",
+    "lidl:210",
     "spar:87064",
     "konzum:0602",
-    "lidl:210",
     "kaufland:5930",
     "plodine:045"
   ],
@@ -22,5 +23,9 @@
   "extra_store_codes": [],
   "exclude_store_codes": [],
   "enrichment_stores_url": "https://raw.githubusercontent.com/senko/cijene-api/main/enrichment/stores.csv",
-  "archive_list_url": "https://api.cijene.dev/v0/list"
+  "archive_list_url": "https://api.cijene.dev/v0/list",
+  "store_labels": {
+    "konzum:1260": "Super Konzum Point (kod posla)",
+    "konzum:0602": "Konzum Ozaljska (rezerva)"
+  }
 }

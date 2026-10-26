@@ -9,7 +9,9 @@ Plan JSON schema (all strings UTF-8, prices in EUR):
   "week_start": "2026-10-26", "week_end": "2026-11-01",
   "generated": "2026-10-26", "archive_dates": {"lidl": "2026-10-26", ...},
   "notes": ["one-line caveats"],
-  "stores": [{"chain": "lidl", "address": "Zadarska 79", "lat": 45.79, "lon": 15.93}],
+  "stores": [{"chain": "lidl", "address": "Zadarska 79"},
+             {"chain": "konzum", "code": "1260", "label": "Super Konzum Point", "address": "Rudeška 169a"}],   # code+label when a chain appears twice
+  # shopping items then reference that store with "store": "konzum:1260" (default: the chain)
   "days": [{"date": "2026-10-26", "label": "Pon", "lunch": "grah i kupus", "dinner": "Pileći file s rižom i brokulom",
             "dinner_recipe": "pileci-file-riza", "leftover": false, "protein_g": 92, "kcal": 820}],
   "shopping": [{"chain": "lidl", "name": "Svježi pileći filet", "pack": "1 kg", "packs": 2,
@@ -101,6 +103,18 @@ def fmt_date(iso):
     return f"{int(d)}.{int(m)}."
 
 
+def store_key(s):
+    return f'{s["chain"]}:{s["code"]}' if s.get("code") else s["chain"]
+
+
+def item_key(it):
+    return it.get("store") or it["chain"]
+
+
+def store_title(s):
+    return s.get("label") or chain_name(s["chain"])
+
+
 def day_time(d, recipes):
     """Minutes of kitchen time this day: 0 for leftovers/own dish, else the recipes' time_min."""
     mins = 0
@@ -123,7 +137,7 @@ def render(plan):
     shopping = plan.get("shopping", [])
     by_store = {}
     for it in shopping:
-        by_store.setdefault(it["chain"], []).append(it)
+        by_store.setdefault(item_key(it), []).append(it)
     subtotals = {c: sum(float(i.get("total", 0)) for i in items) for c, items in by_store.items()}
     grand = sum(subtotals.values())
     totals = plan.get("totals", {})
@@ -200,10 +214,10 @@ a{{color:var(--acc)}}
     # ---------- stores ----------
     out.append("<h2>Trgovine</h2><div class=\"stores\">")
     for s in stores:
-        c = s["chain"]
+        c, k = s["chain"], store_key(s)
         out.append(f'<a class="store" style="--c:{chain_color(c)}" href="{maps_link(s)}" target="_blank" rel="noopener">'
-                   f'<img src="{logo(c)}" alt="" onerror="this.style.visibility=\'hidden\'"><div><b>{e(chain_name(c))}</b><small>{e(s.get("address",""))}</small></div>'
-                   f'<span class="tot">{eur(subtotals.get(c, 0)) if c in subtotals else ""}</span></a>')
+                   f'<img src="{logo(c)}" alt="" onerror="this.style.visibility=\'hidden\'"><div><b>{e(store_title(s))}</b><small>{e(s.get("address",""))}</small></div>'
+                   f'<span class="tot">{eur(subtotals.get(k, 0)) if k in subtotals else ""}</span></a>')
     out.append("</div>")
 
     # ---------- days ----------
@@ -229,14 +243,15 @@ a{{color:var(--acc)}}
 
     # ---------- shopping ----------
     out.append("<h2>Popis za kupnju <span class=\"sub\" style=\"font-weight:400\">(kvačice se pamte na ovom uređaju)</span></h2>")
-    order = [s["chain"] for s in stores if s["chain"] in by_store] + [c for c in by_store if c not in [s["chain"] for s in stores]]
-    for c in order:
-        st = next((s for s in stores if s["chain"] == c), {"chain": c, "address": ""})
-        out.append(f'<section class="shop" style="--c:{chain_color(c)}"><header><img src="{logo(c)}" alt="" onerror="this.style.visibility=\'hidden\'"><b>{e(chain_name(c))}</b>'
+    order = [store_key(s) for s in stores if store_key(s) in by_store] + [k for k in by_store if k not in [store_key(s) for s in stores]]
+    for k in order:
+        st = next((s for s in stores if store_key(s) == k), {"chain": k.split(":")[0], "address": ""})
+        c = st["chain"]
+        out.append(f'<section class="shop" style="--c:{chain_color(c)}"><header><img src="{logo(c)}" alt="" onerror="this.style.visibility=\'hidden\'"><b>{e(store_title(st))}</b>'
                    f'<span class="sub">{e(st.get("address",""))}</span><a href="{maps_link(st)}" target="_blank" rel="noopener">karta</a>'
-                   f'<span class="st">{eur(subtotals[c])}</span></header><ul>')
-        for i, it in enumerate(by_store[c]):
-            key = f"{plan['week_start']}:{c}:{i}"
+                   f'<span class="st">{eur(subtotals[k])}</span></header><ul>')
+        for i, it in enumerate(by_store[k]):
+            key = f"{plan['week_start']}:{k}:{i}"
             promo = ' <span class="pill promo">akcija</span>' if it.get("promo") else ""
             fr = ", ".join(it.get("for", [])) if it.get("for") else ""
             out.append(f'<li data-k="{e(key)}"><input type="checkbox"><div class="t">{e(it["name"])}{promo}'
@@ -336,7 +351,7 @@ def render_email(plan):
     stores = plan.get("stores", [])
     by_store = {}
     for it in plan.get("shopping", []):
-        by_store.setdefault(it["chain"], []).append(it)
+        by_store.setdefault(item_key(it), []).append(it)
     subtotals = {c: sum(float(i.get("total", 0)) for i in items) for c, items in by_store.items()}
     grand = sum(subtotals.values())
     totals = plan.get("totals", {})
@@ -365,12 +380,12 @@ def render_email(plan):
     # stores
     o.append(f"<h2 {h2}>Trgovine</h2>")
     for s in stores:
-        c = s["chain"]
+        c, k = s["chain"], store_key(s)
         o.append(f'<a href="{maps_link(s)}" style="text-decoration:none;color:#1d1d1b"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" '
                  f'style="{card}border-left:5px solid {chain_color(c)};margin-bottom:6px"><tr>'
                  f'<td width="44" style="padding:8px 4px 8px 10px"><img src="{logo(c)}" width="28" height="28" alt="" style="display:block;border-radius:6px"></td>'
-                 f'<td style="padding:8px 0"><b>{e(chain_name(c))}</b><br><span style="{MUTE}font-size:13px">{e(s.get("address",""))}</span></td>'
-                 f'<td align="right" style="padding:8px 12px;font-weight:700;white-space:nowrap">{eur(subtotals[c]) if c in subtotals else ""}</td></tr></table></a>')
+                 f'<td style="padding:8px 0"><b>{e(store_title(s))}</b><br><span style="{MUTE}font-size:13px">{e(s.get("address",""))}</span></td>'
+                 f'<td align="right" style="padding:8px 12px;font-weight:700;white-space:nowrap">{eur(subtotals[k]) if k in subtotals else ""}</td></tr></table></a>')
 
     # week: 2 columns of day cards
     o.append(f"<h2 {h2}>Tjedan</h2>")
@@ -407,16 +422,17 @@ def render_email(plan):
 
     # shopping
     o.append(f"<h2 {h2}>Popis za kupnju</h2>")
-    order = [s["chain"] for s in stores if s["chain"] in by_store] + [c for c in by_store if c not in [s["chain"] for s in stores]]
-    for c in order:
-        st = next((s for s in stores if s["chain"] == c), {"chain": c, "address": ""})
+    order = [store_key(s) for s in stores if store_key(s) in by_store] + [k for k in by_store if k not in [store_key(s) for s in stores]]
+    for k in order:
+        st = next((s for s in stores if store_key(s) == k), {"chain": k.split(":")[0], "address": ""})
+        c = st["chain"]
         o.append(f'<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="{card}margin-bottom:10px;border-collapse:separate">'
                  f'<tr><td colspan="3" style="padding:8px 12px;border-bottom:1px solid #e6e1d8;border-left:5px solid {chain_color(c)};border-radius:12px 12px 0 0">'
-                 f'<img src="{logo(c)}" width="22" height="22" alt="" style="vertical-align:middle;border-radius:5px;margin-right:6px"><b style="font-size:16px;vertical-align:middle">{e(chain_name(c))}</b>'
+                 f'<img src="{logo(c)}" width="22" height="22" alt="" style="vertical-align:middle;border-radius:5px;margin-right:6px"><b style="font-size:16px;vertical-align:middle">{e(store_title(st))}</b>'
                  f' <span style="{MUTE}font-size:13px;vertical-align:middle">{e(st.get("address",""))}</span>'
                  f' <a href="{maps_link(st)}" style="font-size:12px;color:#1f6f5f;vertical-align:middle">karta</a>'
-                 f'<span style="float:right;font-weight:700">{eur(subtotals[c])}</span></td></tr>')
-        for it in by_store[c]:
+                 f'<span style="float:right;font-weight:700">{eur(subtotals[k])}</span></td></tr>')
+        for it in by_store[k]:
             promo = ' <span style="background:#fdecec;color:#d9534f;border-radius:999px;padding:0 6px;font-size:11px;font-weight:600">akcija</span>' if it.get("promo") else ""
             fr = (" · " + ", ".join(it["for"])) if it.get("for") else ""
             o.append(f'<tr><td width="18" style="padding:7px 0 7px 12px;border-bottom:1px dashed #e6e1d8;vertical-align:top">☐</td>'

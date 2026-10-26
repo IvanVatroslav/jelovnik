@@ -1,29 +1,29 @@
-Using 5 stores:
+Using 6 stores:
         km  konzum    0602    Ozaljska 148
+        km  konzum    1260    Rudeška Cesta 169A
         km  kaufland  5930    Jablanska ulica br. 80
         km  spar      87064   H. Macanovica 29
         km  plodine   045     Ulica Vice Vukova 2
         km  lidl      210     Zadarska Ulica 79
-Downloading archive 2026-10-25 (119 MB) ...
-Chains missing in 2026-10-25: ['kaufland']. Falling back to 2026-10-24 ...
+Downloading archive 2026-10-26 (137 MB) ...
 {
-  "archive_date": "2026-10-25",
+  "archive_date": "2026-10-26",
   "chain_archive_date": {
-    "konzum": "2026-10-25",
-    "lidl": "2026-10-25",
-    "spar": "2026-10-25",
-    "plodine": "2026-10-25",
-    "kaufland": "2026-10-24"
+    "konzum": "2026-10-26",
+    "lidl": "2026-10-26",
+    "spar": "2026-10-26",
+    "kaufland": "2026-10-26",
+    "plodine": "2026-10-26"
   },
-  "generated": "2026-10-25",
-  "stores": 5,
-  "rows": 87685,
+  "generated": "2026-10-26",
+  "stores": 6,
+  "rows": 105478,
   "rows_by_chain": {
-    "konzum": 5375,
-    "lidl": 14105,
-    "spar": 5323,
-    "plodine": 48764,
-    "kaufland": 14118
+    "konzum": 23150,
+    "lidl": 14126,
+    "spar": 5317,
+    "kaufland": 14118,
+    "plodine": 48767
   },
   "staples_matched": 48,
   "staples_total": 48

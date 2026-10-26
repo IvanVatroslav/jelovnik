@@ -1,5 +1,6 @@
 chain,store_code,type,address,city,distance_km,lat,lon
 konzum,0602,supermarket,Ozaljska 148,Zagreb,,45.797355,15.93788
+konzum,1260,hipermarket,Rudeška Cesta 169A,Zagreb,,45.7909078,15.9137183
 kaufland,5930,hipermarket,Jablanska ulica br. 80,Zagreb,,45.7959372,15.9187045
 spar,87064,supermarket,H. Macanovica 29,Zagreb,,45.7892198,15.9297565
 plodine,045,supermarket,Ulica Vice Vukova 2,Zagreb,,45.77322,15.94292

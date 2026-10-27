@@ -461,10 +461,17 @@ def render_email(plan):
 
 
 def main():
-    """render.py plan.json out.html [--email out_email.html]"""
+    """render.py plan.json out.html [--email out_email.html] [--data DATA_DIR  (validates first, refuses on mismatch)]"""
     if len(sys.argv) < 3:
         sys.exit(__doc__)
     plan = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+    if "--data" in sys.argv:
+        # refuse to render anything that doesn't match the real price list
+        import subprocess
+        data_dir = sys.argv[sys.argv.index("--data") + 1]
+        rc = subprocess.call([sys.executable, "-I", str(Path(__file__).with_name("validate.py")), sys.argv[1], data_dir])
+        if rc != 0:
+            sys.exit("render refused: plan.json failed validation")
     Path(sys.argv[2]).write_text(render(plan), encoding="utf-8")
     print(f"wrote {sys.argv[2]}")
     if "--email" in sys.argv:

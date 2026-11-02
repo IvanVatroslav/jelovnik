@@ -39,6 +39,16 @@ def main():
     data = Path(sys.argv[2])
     problems = []
 
+    # --- freshness: every chain's price list must be from today (or yesterday before 10:00)
+    meta = json.loads((data / "meta.json").read_text(encoding="utf-8"))
+    today = date.today()
+    for chain, d in meta.get("chain_archive_date", {}).items():
+        age = (today - date.fromisoformat(d)).days
+        if age > 1:
+            problems.append(f"STALE PRICES: {chain} price list is from {d} ({age} days old). Refresh data/ first; do not plan on old prices.")
+    if (today - date.fromisoformat(meta.get("generated", "2000-01-01"))).days > 1:
+        problems.append(f"STALE SNAPSHOT: data generated {meta.get('generated')}. Run scripts/filter.py first.")
+
     # --- index the snapshot: (chain, store_code) -> normalized name -> list of rows
     idx = defaultdict(lambda: defaultdict(list))
     with gzip.open(data / "prices.csv.gz", "rt", encoding="utf-8") as f:

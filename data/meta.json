@@ -1,21 +1,21 @@
 {
-  "archive_date": "2026-11-02",
+  "archive_date": "2026-11-09",
   "chain_archive_date": {
-    "konzum": "2026-11-02",
-    "lidl": "2026-11-02",
-    "spar": "2026-11-02",
-    "kaufland": "2026-11-02",
-    "plodine": "2026-11-02"
+    "konzum": "2026-11-09",
+    "lidl": "2026-11-09",
+    "spar": "2026-11-09",
+    "kaufland": "2026-11-09",
+    "plodine": "2026-11-09"
   },
-  "generated": "2026-11-02",
+  "generated": "2026-11-09",
   "stores": 6,
-  "rows": 106063,
+  "rows": 106186,
   "rows_by_chain": {
-    "konzum": 23150,
-    "lidl": 14283,
-    "spar": 5408,
-    "kaufland": 14209,
-    "plodine": 49013
+    "konzum": 23107,
+    "lidl": 14101,
+    "spar": 5450,
+    "kaufland": 14399,
+    "plodine": 49129
   },
   "staples_matched": 48,
   "staples_total": 48

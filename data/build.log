@@ -5,25 +5,25 @@ Using 6 stores:
         km  spar      87064   H. Macanovica 29
         km  plodine   045     Ulica Vice Vukova 2
         km  lidl      210     Zadarska Ulica 79
-Downloading archive 2026-11-09 (143 MB) ...
+Downloading archive 2026-11-16 (148 MB) ...
 {
-  "archive_date": "2026-11-09",
+  "archive_date": "2026-11-16",
   "chain_archive_date": {
-    "konzum": "2026-11-09",
-    "lidl": "2026-11-09",
-    "spar": "2026-11-09",
-    "kaufland": "2026-11-09",
-    "plodine": "2026-11-09"
+    "konzum": "2026-11-16",
+    "lidl": "2026-11-16",
+    "spar": "2026-11-16",
+    "kaufland": "2026-11-16",
+    "plodine": "2026-11-16"
   },
-  "generated": "2026-11-09",
+  "generated": "2026-11-16",
   "stores": 6,
-  "rows": 106186,
+  "rows": 107495,
   "rows_by_chain": {
-    "konzum": 23107,
-    "lidl": 14101,
-    "spar": 5450,
-    "kaufland": 14399,
-    "plodine": 49129
+    "konzum": 23104,
+    "lidl": 14217,
+    "spar": 6651,
+    "kaufland": 14496,
+    "plodine": 49027
   },
   "staples_matched": 48,
   "staples_total": 48
